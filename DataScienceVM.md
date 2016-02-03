@@ -1,28 +1,21 @@
-**Steps to create a Linux data science virtual machine (VM) on Azure**
+#Steps to create a Linux data science virtual machine (VM) on Azure
 
 This pages provides the details for creating an Ubuntu VM on Azure for
 data science and machine learning applications. In particular, this
 document emphasizes on installing various Python packages appropriate
 for such applications.
 
-1.  Provisioning an Ubuntu VM on Azure:
+###1.  Provisioning an Ubuntu VM on Azure:
 
     a.  Log into your Azure account.
-
     b.  Click on “New”.
-
     c.  Click on “Compute”.
-
     d.  Select an Ubuntu Server.
-
     e.  Click on “Create” (Do not change the deployment model option).
-
     f.  Fill in the requirement in the “Basics” panel (Instructions in
         the following steps assume you have chosen “Password” for your
         “Authentication Type”).
-
     g.  Choose a size in the next panel.
-
     h.  Start the deployment.
 
 2.  Creating a DNS label name for VM:
