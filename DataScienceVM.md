@@ -92,13 +92,13 @@ The content of ```startwm.sh``` should be as follows:
 e.  Run a remote desktop connection and use the public IP of your VM to
     connect to your VM.
 
-####5. Installing git
+####6. Installing git
 
 a.  Run:
 
 		sudo apt-get install git
 
-####6. Installing Azure Command Lines (Required to interact with other Azure services, e.g. Azure Blob Storage):
+####7. Installing Azure Command Lines (Required to interact with other Azure services, e.g. Azure Blob Storage):
 
 a.  To install Azure Command Lines, run:
         
@@ -123,7 +123,7 @@ Blob Storage account and the name of your file.
 c.  To interact with Azure Blob Storage from Python, read this [link](http://blogs.msdn.com/b/tconte/archive/2013/04/17/how-to-interact-with-windows-azure-blob-storage-from-linux-using-python.aspx)
     
 
-####7.  Installing Anaconda (Based on instructions outlined [here](http://docs.continuum.io/anaconda/install#linux-install)):
+####8.  Installing Anaconda (Based on instructions outlined [here](http://docs.continuum.io/anaconda/install#linux-install)):
 
 a.  Make a remote desktop connection to your VM and download the
     Anaconda installer for Linux from this
