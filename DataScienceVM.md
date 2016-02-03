@@ -1,12 +1,11 @@
-#Steps to create a Linux data science virtual machine (VM) on Azure
+#Steps to create a Linux data science virtual machine (VM) on Microsoft Azure
 
-This pages provides the details for creating an Ubuntu VM on Azure for
+This pages provides the details for creating an Ubuntu VM on Microsoft Azure for
 data science and machine learning applications. In particular, this
 document emphasizes on installing various Python packages appropriate
 for such applications.
 
-###1.  Provisioning an Ubuntu VM on Azure:
-
+###1.  Provisioning an Ubuntu VM on Microsoft Azure:
     a.  Log into your Azure account.
     b.  Click on “New”.
     c.  Click on “Compute”.
@@ -18,39 +17,29 @@ for such applications.
     g.  Choose a size in the next panel.
     h.  Start the deployment.
 
-2.  Creating a DNS label name for VM:
-
+###2.  Creating a DNS label name for VM:
     a.  Once deployment is completed, click on the IP address on your
         VM panel.
-
     b.  Click on “Configuration” in the “Setting” panel,and enter your
         desired name.
 
-3.  Attaching a data disk (if needed):
-
+###3.  Attaching a data disk (if needed):
     a.  Click on “Setting” on your VM panel.
-
     b.  Select “Disks”.
-
     c.  Click on “Attach New” and choose a size.
-
     d.  Connect to your VM (using a terminal emulator such as PuTTY). To
         do so, you can use the public IP address of your VM or the DNS
         name label you created in the last step.
-
     e.  Follow the steps under “How to: Initialize a new data disk in
-        Linux” on this page:
-        <https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-how-to-attach-disk/>
+        Linux” on [this page](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-how-to-attach-disk/).
 
-4.  Adding a desktop environment to your VM:
-
-    a.  Run
-
+###4.  Adding a desktop environment to your VM:
+    a.  Run:
+```
         sudo apt-get install xfce4
-
-> sudo apt-get install xubuntu-desktop
->
-> via command line to add xfce4 (<http://www.xfce.org/>) to your VM.
+		sudo apt-get install xubuntu-desktop
+```		
+	via command line to add [xfce4](<http://www.xfce.org/>) to your VM.
 
 1.  Setting up a remote desktop connection for your VM:
 
