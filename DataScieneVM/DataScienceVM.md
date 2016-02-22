@@ -46,7 +46,7 @@ d.  Connect to your VM (using a terminal emulator such as PuTTY). To
     name label you created in the last step.
 
 e.  Follow the steps under “How to: Initialize a new data disk in
-	Linux” on [this page]([https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-how-to-attach-disk/).
+	Linux” on [this page](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-how-to-attach-disk/).
 
 ####4.  Adding a desktop environment to your VM:
 
