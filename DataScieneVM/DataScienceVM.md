@@ -52,9 +52,12 @@ e.  Follow the steps under “How to: Initialize a new data disk in
 
 a.  Run:
 
-		sudo apt-get install xfce4
+		sudo apt-get update
 		sudo apt-get install xubuntu-desktop
-
+		sudo apt-get install xfce4
+		sudo apt-get install xfce4-terminal
+		sudo apt-get install gnome-icon-theme-full tango-icon-theme
+		
 via command line to add [xfce4](http://www.xfce.org/) to your VM.
 
 ####5. Setting up a remote desktop connection for your VM:
@@ -73,10 +76,8 @@ d.  Set up a remote desktop server on your VM by following the steps
     (http://www.tweaking4all.com/software/linux-software/use-xrdp-remote-access-ubuntu-14-04/).
     In short you need to run the following commands:
         
-		sudo apt-get update
+		
         sudo apt-get install xrdp
-		sudo apt-get install xfce4-terminal
-		sudo apt-get install gnome-icon-theme-full tango-icon-theme
 		echo xfce4-session > ~/.xsession
 		sudo nano /etc/xrdp/startwm.sh
 
