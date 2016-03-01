@@ -89,6 +89,8 @@ The content of ```startwm.sh``` should be as follows:
 			export LANG LANGUAGE
 		fi	
 		startxfce4
+Finaaly run:
+		sudo service xrdp restart
 
 e.  Run a remote desktop connection and use the public IP of your VM to
     connect to your VM.
