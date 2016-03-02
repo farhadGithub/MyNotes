@@ -95,6 +95,30 @@ Finally run:
 
 e.  Run a remote desktop connection and use the public IP of your VM to
     connect to your VM.
+    
+f. If you want to always connect to the same session when you connect to your VM via remote desktop, als run:
+
+		 sudo vim /etc/xrdp/xrdp.ini
+
+And change the following lines:
+
+		[xrdp1]
+		name=sesman-vnc
+		lib=libvnc.so
+		username=ask
+		password=ask
+		ip=127.0.0.1
+		port=-1
+
+to
+
+		[xrdp1]
+		name=sesman-vnc
+		lib=libvnc.so
+		username=ask
+		password=ask
+		ip=127.0.0.1
+		port=ask5910
 
 ####6. Installing git
 
