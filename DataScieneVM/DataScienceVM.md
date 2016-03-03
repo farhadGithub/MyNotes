@@ -156,6 +156,9 @@ c.  To interact with Azure Blob Storage from Python, read this [link](http://blo
 a.  From the Anaconda website, copy and paste the link address of its Linux installer and then run:
 		
 		wget "link address here"
+
+Your command after pasting should look like this:
+
 		wget "https://3230d63b5fc54e62148e-c95ac804525aac4b6dba79b00b39d1d3.ssl.cf1.rackcdn.com/Anaconda2-2.5.0-Linux-x86_64.sh"
 
 b.  Run:
@@ -167,7 +170,7 @@ the Anaconoda you download.
 
 c.  Assuming you have installed Anaconda in its default path which is your home directory, run:
 		
-		cd anaconda
-		source bin/activate ~/anaconda
+		cd anaconda2
+		source bin/activate ~/anaconda2
 		
 
