@@ -33,7 +33,7 @@ a.  Once the deployment is completed, click on the IP address of your
 b.  Click on “Configuration” in the “Setting” panel and enter your
     desired name.
 
-####3.  Attaching a data disk (if needed):
+####3.  Attaching a data disk [optional]:
 
 a.  Click on “Setting” on your VM panel.
 
@@ -48,7 +48,7 @@ d.  Connect to your VM (using a terminal emulator such as PuTTY). To
 e.  Follow the steps under “How to: Initialize a new data disk in
 	Linux” on [this page](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-how-to-attach-disk/).
 
-####4.  Adding a desktop environment to your VM:
+####4.  Adding a desktop environment to your VM [optional]:
 
 a.  Run:
 
@@ -60,7 +60,7 @@ a.  Run:
 		
 via command line to add [xfce4](http://www.xfce.org/) to your VM.
 
-####5. Setting up a remote desktop connection for your VM:
+####5. Setting up a remote desktop connection for your VM [optional]:
 
 a.  Go to your Azure portal and under “All resources” and select
     “Network Security Group”.
@@ -71,7 +71,7 @@ c.  Click on “Add” and add a rule with name: rxdp, protocol: TCP,
     destination port range: 3389 while keeping other options at
     their default value.
 
-d.  [Optional] Set up a remote desktop server on your VM by following the steps
+d.  Set up a remote desktop server on your VM by following the steps
     described [here]
     (http://www.tweaking4all.com/software/linux-software/use-xrdp-remote-access-ubuntu-14-04/).
     In short you need to run the following commands:
