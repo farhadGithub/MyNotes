@@ -71,7 +71,7 @@ c.  Click on “Add” and add a rule with name: rxdp, protocol: TCP,
     destination port range: 3389 while keeping other options at
     their default value.
 
-d.  Set up a remote desktop server on your VM by following the steps
+d.  [Optional] Set up a remote desktop server on your VM by following the steps
     described [here]
     (http://www.tweaking4all.com/software/linux-software/use-xrdp-remote-access-ubuntu-14-04/).
     In short you need to run the following commands:
@@ -153,9 +153,10 @@ c.  To interact with Azure Blob Storage from Python, read this [link](http://blo
 
 ####8.  Installing Anaconda (Based on instructions outlined [here](http://docs.continuum.io/anaconda/install#linux-install)):
 
-a.  Make a remote desktop connection to your VM and download the
-    Anaconda installer for Linux from this
-    [link](https://www.continuum.io/downloads) in your VM browser.
+a.  From the Anaconda website, copy and paste the link address of its Linux installer and then run:
+		
+		wget "link address here"
+		wget "https://3230d63b5fc54e62148e-c95ac804525aac4b6dba79b00b39d1d3.ssl.cf1.rackcdn.com/Anaconda2-2.5.0-Linux-x86_64.sh"
 
 b.  Run:
       
@@ -164,6 +165,9 @@ b.  Run:
 The name of the file might be different depending on what version of
 the Anaconoda you download.
 
-c.  The script will start Python. When asked to choose a location, you
-    can enter a global location (e.g. ```/user/```) to install Anaconda for
-    all users on VM.
+c.  Assuming you have installed Anaconda in its default path which is your home directory, run:
+		
+		cd anaconda
+		source bin/activate ~/anaconda
+		
+
