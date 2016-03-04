@@ -31,15 +31,33 @@ a.  Once the deployment is completed, click on the IP address of your
 b.  Click on **Configuration** in the **Setting** panel and enter your
     desired name.
 
-####3.  Creating a DNS label name for VM:
+####3.  Connecting to your VM:
 
-a.  Once the deployment is completed, click on the IP address of your
-    VM in the Azure portal.
+a.  On Mac or Linux, simply type `ssh VM_DNS_label_name` to connect to your VM.
 	
-b.  Click on **Configuration** in the **Setting** panel and enter your
-    desired name.
+b.  On Windows, you can download and install [Putty](http://www.putty.org/). On the Putty panel, you can then enter the DNS name or the IP address of your VM. Usually for the first connection, you need to enter the IP address.
 
+c.  These two pages ([here](http://dag.wiee.rs/blog/content/improving-putty-settings-on-windows) and [here](http://looselytyped.blogspot.com/2013/02/zenburn-pleasant-color-scheme-for-putty.html))provide some useful tips to customize the color, font and other attributes of your Putty client:
 
+	Window\Colours:
+	Default Foreground - 255/255/255
+	Default Background - 51/51/51
+	ANSI Black - 77/77/77
+	ANSI Green - 152/251/152
+	ANSI Yellow - 240/230/140
+	ANSI Blue - 205/133/63
+	ANSI Blue Bold -135/206/235
+	ANSI Magenta - 255/222/173 or 205/92/92
+	ANSI Cyan - 255/160/160
+	ANSI Cyan Bold - 255/215/0
+	ANSI White - 245/222/179
+	
+	Window\Appearanc\Font Settings:
+	Consolas, 10-point
+	
+	Window\Lines of scrollback
+	20000
+	
 ####4.  Attaching a data disk [optional]:
 
 a.  Click on **Setting** on your VM panel.
