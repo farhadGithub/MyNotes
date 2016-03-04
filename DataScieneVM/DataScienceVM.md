@@ -173,7 +173,7 @@ c.  Assuming you have installed Anaconda in its default path which is your home 
 		cd anaconda2
 		source bin/activate ~/anaconda2
 		
-d. In order to access to your notebooks on the VM from your client browser, you also need as follows (More detailes [here](http://jupyter-notebook.readthedocs.org/en/latest/public_server.html)):
+d. In order to access to your notebooks on the VM from your client browser, you also need to take the followign steps (More detailes [here](http://jupyter-notebook.readthedocs.org/en/latest/public_server.html)):
 	
  d.1. First, we need to create a hasehd password for your notebook access:
 		
@@ -184,7 +184,7 @@ d. In order to access to your notebooks on the VM from your client browser, you 
 		Verify password:
 		Out[2]: 'sha1:67c9e60bb8b6:9ffede0825894254b2e042ea597d771089e11aed'
 	
- d.2. Then we need to add the hashed password created in the last step above to `jupyter_notebook_config.py`. This file should be located at ~/.jupyter. If this does not exit in your system, run the following command to generate a default one:
+ d.2. Then we need to add the hashed password created in the last step above to `jupyter_notebook_config.py`. This file should be located at `~/.jupyter`. If this does not exit in your system, run the following command to generate a default one:
 	
 		jupyter notebook --generate-config
 	
