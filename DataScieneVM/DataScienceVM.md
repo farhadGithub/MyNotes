@@ -174,9 +174,9 @@ c.  Assuming you have installed Anaconda in its default path which is your home 
 		cd anaconda2
 		source bin/activate ~/anaconda2
 		
-d. In order to access to your notebooks on the VM from your client browser, you also need to take the followign steps (More detailes [here](http://jupyter-notebook.readthedocs.org/en/latest/public_server.html)):
-	
- d.1. First, we need to create a hasehd password for your notebook access:
+####8.  Accessing ipython Notebook Server from a Client Browers (Based on instructions outlined [here](http://jupyter-notebook.readthedocs.org/en/latest/public_server.html)):
+
+ a. If you would have a password to access your notebooks, follow these steps:
 		
 		python
 		In [1]: from notebook.auth import passwd
@@ -185,20 +185,21 @@ d. In order to access to your notebooks on the VM from your client browser, you 
 		Verify password:
 		Out[2]: 'sha1:67c9e60bb8b6:9ffede0825894254b2e042ea597d771089e11aed'
 	
- d.2. Then we need to add the hashed password created in the last step above to `jupyter_notebook_config.py`. This file should be located at `~/.jupyter`. If this does not exit in your system, run the following command to generate a default one:
+b. Then we need to make some modifications to `jupyter_notebook_config.py`. This file should be located at `~/.jupyter`. If this does not exit in your system, run the following command to generate a default one:
 	
 		jupyter notebook --generate-config
 	
 Then uncomment, add or change the following lines to `jupyter_notebook_config.py` in a text editor:
 	
-		c.NotebookApp.password = u'sha1:67c9e60bb8b6:9ffede0825894254b2e042ea597d771089e11aed'
 		c.NotebookApp.ip = '*'
 		c.NotebookApp.open_browser = False
 		c.NotebookApp.port = 8888
-		
-Then run `ipython notebook` on your VM and connect to your notebooks from your client brower by entering `http:\\vm_ip_addres:8888/tree` in your browser url box.
 
- d.3. If you also would like to add SSL for more security when your browser sends your password to the VM, follow these steps:
+If you created a hased password as outlined in step 1, you also need to add it to  `jupyter_notebook_config.py`:
+
+		c.NotebookApp.password = u'sha1:67c9e60bb8b6:9ffede0825894254b2e042ea597d771089e11aed'
+
+c. If you also would like to add SSL for more security when your browser sends your password to the VM, follow these steps:
  
  		openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout mykey.key -out mycert.pem
  
@@ -207,6 +208,4 @@ Then run `ipython notebook` on your VM and connect to your notebooks from your c
  		c.NotebookApp.certfile = u'/absolute/path/to/your/certificate/mycert.pem'
  		c.NotebookApp.keyfile = u'/absolute/path/to/your/certificate/mykey.key'
 
-You can then reach your notebooks from this address: `https:\\vm_ip_addres:8888/tree`. Note `https` as oppsed to `http` in the server address. 		
-
-
+d. Finally run `ipython notebook` on your VM to start the notebook server. In order to connect to your notebooks from your client, enter `http:\\vm_ip_addres:8888/tree` in your browser if you have not enabled SSL or `https:\\vm_ip_addres:8888/tree` if you have done so.
