@@ -1,9 +1,7 @@
 #Steps to create an Ubuntu Linux data science virtual machine (VM) on Microsoft Azure
 
 This pages provides the details for creating an Ubuntu VM on Microsoft Azure for
-data science and machine learning applications. In particular, this
-document emphasizes on installing various Python packages appropriate
-for such applications.
+data science and machine learning applications. This page also briefly outlines how to install a Linux desktop for your VM and how to connect via Remote Desktop but these steps are only optional. 
 
 ####1.  Provisioning an Ubuntu VM on Microsoft Azure:
 
@@ -33,7 +31,16 @@ a.  Once the deployment is completed, click on the IP address of your
 b.  Click on **Configuration** in the **Setting** panel and enter your
     desired name.
 
-####3.  Attaching a data disk [optional]:
+####3.  Creating a DNS label name for VM:
+
+a.  Once the deployment is completed, click on the IP address of your
+    VM in the Azure portal.
+	
+b.  Click on **Configuration** in the **Setting** panel and enter your
+    desired name.
+
+
+####4.  Attaching a data disk [optional]:
 
 a.  Click on **Setting** on your VM panel.
 
@@ -48,7 +55,7 @@ d.  Connect to your VM (using a terminal emulator such as PuTTY). To
 e.  Follow the steps under **How to: Initialize a new data disk in
 	Linux** on [this page](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-how-to-attach-disk/).
 
-####4.  Adding a desktop environment to your VM [optional]:
+####5.  Adding a desktop environment to your VM [optional]:
 
 a.  Run:
 
@@ -60,7 +67,7 @@ a.  Run:
 		
 via command line to add [xfce4](http://www.xfce.org/) to your VM.
 
-####5. Setting up a remote desktop connection for your VM [optional]:
+####6. Setting up a remote desktop connection for your VM [optional]:
 
 a.  Go to your Azure portal and under **All resources** and select
     **Network Security Group**.
@@ -121,13 +128,13 @@ to
 		ip=127.0.0.1
 		port=ask5910
 
-####6. Installing git [optional]:
+####7. Installing git:
 
 a.  Run:
 
 		sudo apt-get install git
 
-####7. Installing Azure Command Lines (Required to interact with other Azure services, e.g. Azure Blob Storage):
+####8. Installing Azure Command Lines (Required to interact with other Azure services, e.g. Azure Blob Storage):
 
 a.  To install Azure Command Lines, run:
         
@@ -151,7 +158,7 @@ Blob Storage account and the name of your file.
 
 c.  To interact with Azure Blob Storage from Python, read this [link](http://blogs.msdn.com/b/tconte/archive/2013/04/17/how-to-interact-with-windows-azure-blob-storage-from-linux-using-python.aspx).
     
-####8.  Installing Anaconda (Based on instructions outlined [here](http://docs.continuum.io/anaconda/install#linux-install)):
+####9.  Installing Anaconda (Based on instructions outlined [here](http://docs.continuum.io/anaconda/install#linux-install)):
 
 a.  From the Anaconda website, copy and paste the link address of its Linux installer and then run:
 		
