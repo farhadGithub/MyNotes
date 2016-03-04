@@ -189,7 +189,7 @@ d. In order to access to your notebooks on the VM from your client browser, you 
 	
 		jupyter notebook --generate-config
 	
-	Then uncomment or add the following line to '''jupyter_notebook_config.py''' in a text editor:
+Then uncomment or add the following line to `jupyter_notebook_config.py` in a text editor:
 	
 		c.NotebookApp.password = u'sha1:67c9e60bb8b6:9ffede0825894254b2e042ea597d771089e11aed'
 
