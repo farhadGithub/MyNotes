@@ -202,7 +202,8 @@ Then run `ipython notebook` on your VM and connect to your notebooks from your c
  
  		openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout mykey.key -out mycert.pem
  
- And uncomment, add or change the following lines to `jupyter_notebook_config.py` in a text editor:		
+ And uncomment, add or change the following lines to `jupyter_notebook_config.py` in a text editor:	
+ 
  		c.NotebookApp.certfile = u'/absolute/path/to/your/certificate/mycert.pem'
  		c.NotebookApp.keyfile = u'/absolute/path/to/your/certificate/mykey.key'
 
