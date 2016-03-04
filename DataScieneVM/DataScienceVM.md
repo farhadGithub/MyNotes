@@ -121,7 +121,7 @@ to
 		ip=127.0.0.1
 		port=ask5910
 
-####6. Installing git
+####6. Installing git [optional]:
 
 a.  Run:
 
@@ -151,7 +151,6 @@ Blob Storage account and the name of your file.
 
 c.  To interact with Azure Blob Storage from Python, read this [link](http://blogs.msdn.com/b/tconte/archive/2013/04/17/how-to-interact-with-windows-azure-blob-storage-from-linux-using-python.aspx).
     
-
 ####8.  Installing Anaconda (Based on instructions outlined [here](http://docs.continuum.io/anaconda/install#linux-install)):
 
 a.  From the Anaconda website, copy and paste the link address of its Linux installer and then run:
@@ -176,7 +175,7 @@ c.  Assuming you have installed Anaconda in its default path which is your home 
 		
 ####8.  Accessing ipython Notebook Server from a Client Brower (Based on instructions outlined [here](http://jupyter-notebook.readthedocs.org/en/latest/public_server.html)):
 
- a. If you would have a password to access your notebooks, follow these steps:
+ a. If you would like to have a password to access your notebooks, follow these steps:
 		
 		python
 		In [1]: from notebook.auth import passwd
