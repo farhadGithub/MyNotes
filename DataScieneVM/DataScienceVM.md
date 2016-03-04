@@ -189,7 +189,23 @@ d. In order to access to your notebooks on the VM from your client browser, you 
 	
 		jupyter notebook --generate-config
 	
-Then uncomment or add the following line to `jupyter_notebook_config.py` in a text editor:
+Then uncomment, add or change the following lines to `jupyter_notebook_config.py` in a text editor:
 	
 		c.NotebookApp.password = u'sha1:67c9e60bb8b6:9ffede0825894254b2e042ea597d771089e11aed'
+		c.NotebookApp.ip = '*'
+		c.NotebookApp.open_browser = False
+		c.NotebookApp.port = 8888
+		
+Then run `ipython notebook` on your VM and connect to your notebooks from your client brower by entering `http:\\vm_ip_addres:8888/tree` in your browser url box.
+
+ d.3. If you also would like to add SSL for more security when your browser sends your password to the VM, follow these steps:
+ 
+ 		openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout mykey.key -out mycert.pem
+ 
+ And uncomment, add or change the following lines to `jupyter_notebook_config.py` in a text editor:		
+ 		c.NotebookApp.certfile = u'/absolute/path/to/your/certificate/mycert.pem'
+ 		c.NotebookApp.keyfile = u'/absolute/path/to/your/certificate/mykey.key'
+
+You can then reach your notebooks from this address: `https:\\vm_ip_addres:8888/tree` 		
+
 
