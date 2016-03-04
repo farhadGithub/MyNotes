@@ -55,7 +55,7 @@ c.  These two pages ([here](http://dag.wiee.rs/blog/content/improving-putty-sett
 		Window\Appearanc\Font Settings:
 		Consolas, 10-point
 		
-		Window\Lines of scrollback
+		Window\Lines of scrollback:
 		20000
 	
 ####4.  Attaching a data disk [optional]:
