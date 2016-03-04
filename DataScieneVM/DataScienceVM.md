@@ -1,4 +1,4 @@
-#Steps to create a Linux data science virtual machine (VM) on Microsoft Azure
+#Steps to create an Ubuntu Linux data science virtual machine (VM) on Microsoft Azure
 
 This pages provides the details for creating an Ubuntu VM on Microsoft Azure for
 data science and machine learning applications. In particular, this
