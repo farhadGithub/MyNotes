@@ -39,24 +39,24 @@ b.  On Windows, you can download and install [Putty](http://www.putty.org/). On 
 
 c.  These two pages ([here](http://dag.wiee.rs/blog/content/improving-putty-settings-on-windows) and [here](http://looselytyped.blogspot.com/2013/02/zenburn-pleasant-color-scheme-for-putty.html)) provide some useful tips to customize the color, font and other attributes of your Putty client. Here is a summary:
 
-	Window\Colours:
-	Default Foreground - 255/255/255
-	Default Background - 51/51/51
-	ANSI Black - 77/77/77
-	ANSI Green - 152/251/152
-	ANSI Yellow - 240/230/140
-	ANSI Blue - 205/133/63
-	ANSI Blue Bold -135/206/235
-	ANSI Magenta - 255/222/173 or 205/92/92
-	ANSI Cyan - 255/160/160
-	ANSI Cyan Bold - 255/215/0
-	ANSI White - 245/222/179
-	
-	Window\Appearanc\Font Settings:
-	Consolas, 10-point
-	
-	Window\Lines of scrollback
-	20000
+		Window\Colours:
+		Default Foreground - 255/255/255
+		Default Background - 51/51/51
+		ANSI Black - 77/77/77
+		ANSI Green - 152/251/152
+		ANSI Yellow - 240/230/140
+		ANSI Blue - 205/133/63
+		ANSI Blue Bold -135/206/235
+		ANSI Magenta - 255/222/173 or 205/92/92
+		ANSI Cyan - 255/160/160
+		ANSI Cyan Bold - 255/215/0
+		ANSI White - 245/222/179
+		
+		Window\Appearanc\Font Settings:
+		Consolas, 10-point
+		
+		Window\Lines of scrollback
+		20000
 	
 ####4.  Attaching a data disk [optional]:
 
