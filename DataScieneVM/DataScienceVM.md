@@ -9,17 +9,17 @@ for such applications.
 
 a.  Log into your Azure account.
 
-b.  Click on “New”.
+b.  Click on **New**.
 
-c.  Click on “Compute”.
+c.  Click on **Compute**.
 
 d.  Select an Ubuntu Server.
 	
-e.  Click on “Create” (Do not change the deployment model option).
+e.  Click on **Create** (Do not change the deployment model option).
 
 f.  Fill in the requirement in the “Basics” panel (Instructions in
-	the following steps assume you have chosen “Password” for
-	“Authentication Type”).
+	the following steps assume you have chosen **Password** for
+	**Authentication Type**).
 
 g.  Choose a size in the next panel.
 
@@ -30,23 +30,23 @@ h.  Start the deployment.
 a.  Once the deployment is completed, click on the IP address of your
     VM in the Azure portal.
 	
-b.  Click on “Configuration” in the “Setting” panel and enter your
+b.  Click on **Configuration** in the **Setting** panel and enter your
     desired name.
 
 ####3.  Attaching a data disk [optional]:
 
-a.  Click on “Setting” on your VM panel.
+a.  Click on **Setting** on your VM panel.
 
-b.  Select “Disks”.
+b.  Select **Disks**.
 
-c.  Click on “Attach New” and choose a size.
+c.  Click on **Attach New** and choose a size.
 
 d.  Connect to your VM (using a terminal emulator such as PuTTY). To
     do so, you can use the public IP address of your VM or the DNS
     name label you created in the last step.
 
-e.  Follow the steps under “How to: Initialize a new data disk in
-	Linux” on [this page](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-how-to-attach-disk/).
+e.  Follow the steps under **How to: Initialize a new data disk in
+	Linux** on [this page](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-how-to-attach-disk/).
 
 ####4.  Adding a desktop environment to your VM [optional]:
 
@@ -62,12 +62,12 @@ via command line to add [xfce4](http://www.xfce.org/) to your VM.
 
 ####5. Setting up a remote desktop connection for your VM [optional]:
 
-a.  Go to your Azure portal and under “All resources” and select
-    “Network Security Group”.
+a.  Go to your Azure portal and under **All resources** and select
+    **Network Security Group**.
 
-b.  Select “Inbound Security Rules” in the “Settings” panel.
+b.  Select **Inbound Security Rules** in the **Settings** panel.
 
-c.  Click on “Add” and add a rule with name: rxdp, protocol: TCP,
+c.  Click on **Add** and add a rule with name: rxdp, protocol: TCP,
     destination port range: 3389 while keeping other options at
     their default value.
 
@@ -78,10 +78,10 @@ d.  Set up a remote desktop server on your VM by following the steps
         
 		
         sudo apt-get install xrdp
-		echo xfce4-session > ~/.xsession
-		sudo nano /etc/xrdp/startwm.sh
+	echo xfce4-session > ~/.xsession
+	sudo nano /etc/xrdp/startwm.sh
 
-The content of ```startwm.sh``` should be as follows:
+The content of `startwm.sh` should be as follows:
 
 		#!/bin/sh
 		if [ -r /etc/default/locale ]; then
@@ -89,6 +89,7 @@ The content of ```startwm.sh``` should be as follows:
 			export LANG LANGUAGE
 		fi	
 		startxfce4
+		
 Finally run:
 		
 		sudo service xrdp restart
@@ -136,8 +137,8 @@ a.  To install Azure Command Lines, run:
 		sudo npm install azure-cli -g
 		
 b.  To transfer files from and to Azure Blob Storage, go to your
-    Azure Blob Storage account on Azure Portal and copy the “KEY1”
-    from “Connection strings” and run the following commands:
+    Azure Blob Storage account on Azure Portal and copy the **KEY1**
+    from **Connection strings** and run the following commands:
         
 		AZURE\_STORAGE\_CONNECTION\_STRING=key1
 		azure storage blob upload
