@@ -101,10 +101,9 @@ d.  Set up a remote desktop server on your VM by following the steps
     (http://www.tweaking4all.com/software/linux-software/use-xrdp-remote-access-ubuntu-14-04/).
     In short you need to run the following commands:
         
-		
-        sudo apt-get install xrdp
-	echo xfce4-session > ~/.xsession
-	sudo nano /etc/xrdp/startwm.sh
+		sudo apt-get install xrdp
+		echo xfce4-session > ~/.xsession
+		sudo nano /etc/xrdp/startwm.sh
 
 The content of `startwm.sh` should be as follows:
 
