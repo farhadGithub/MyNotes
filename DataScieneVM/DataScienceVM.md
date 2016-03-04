@@ -207,6 +207,6 @@ Then run `ipython notebook` on your VM and connect to your notebooks from your c
  		c.NotebookApp.certfile = u'/absolute/path/to/your/certificate/mycert.pem'
  		c.NotebookApp.keyfile = u'/absolute/path/to/your/certificate/mykey.key'
 
-You can then reach your notebooks from this address: `https:\\vm_ip_addres:8888/tree` 		
+You can then reach your notebooks from this address: `https:\\vm_ip_addres:8888/tree`. Note `https` as oppsed to `http` in the server address. 		
 
 
