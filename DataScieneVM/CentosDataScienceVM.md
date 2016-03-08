@@ -77,6 +77,11 @@ e.  Follow the steps under **How to: Initialize a new data disk in
 	
 		sudo yum update
 
+####6.  Installing the EPEL repository:
+The EPEL repository provides useful software packages that are not included in the official CentOS or Red Hat Enterprise Linux repositories.
+		
+		sudo yum install epel-release
+
 ####6.  Installing `screen` [optional]:
 [`screen`](http://www.computerhope.com/unix/screen.htm) is a useful tool for multi-plexing several processes from the same terminal. To install, `screen` on your VM, run:
 		
@@ -84,9 +89,6 @@ e.  Follow the steps under **How to: Initialize a new data disk in
 
 ####5.  (NOT Completed) Adding a desktop environment to your VM [optional]:
 
-a.  Run:
-
-		sudo apt-get update
 		sudo apt-get install xubuntu-desktop
 		sudo apt-get install xfce4
 		sudo apt-get install xfce4-terminal
@@ -158,11 +160,21 @@ to
 
 		sudo yum install git
 
+####8. Installing Node.js:
+NodeJS is not currently part of the CentOS standard repository. Hence running the following command fails to install Node.js:
+
+		sudo yum install nodejs
+
+Instead, you need to run the following commands as described [here](http://lexsheehan.blogspot.com/2013/03/how-to-install-nodejs-on-centos.html):
+
+		sudo yum install openssl-devel
+		sudo yum install gcc-c++
+		wget http://nodejs.org/dist/node-latest.tar.gz
+
 ####8. Installing Azure Command Lines (Required to interact with other Azure services, e.g. Azure Blob Storage):
 
 a.  To install Azure Command Lines, run:
         
-		sudo apt-get update
 		sudo apt-get install nodejs
 		sudo apt-get install npm
 		sudo npm install azure-cli -g
