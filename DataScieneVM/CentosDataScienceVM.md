@@ -73,15 +73,15 @@ d.  Connect to your VM (using a terminal emulator such as PuTTY). To
 e.  Follow the steps under **How to: Initialize a new data disk in
 	Linux** on [this page](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-how-to-attach-disk/).
 
-####5.  Installing `screen` [optional]:
+####5.  Updating your software managenet tool:
+	
+		sudo yum update
+
+####6.  Installing `screen` [optional]:
 [`screen`](http://www.computerhope.com/unix/screen.htm) is a useful tool for multi-plexing several processes from the same terminal. To install, `screen` on your VM, run:
 		
 		sudo yum install screen
 
-####4.  Updating your software managenet tool:
-	
-		sudo yum update
-		
 ####5.  (NOT Completed) Adding a desktop environment to your VM [optional]:
 
 a.  Run:
