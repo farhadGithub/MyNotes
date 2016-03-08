@@ -78,7 +78,11 @@ e.  Follow the steps under **How to: Initialize a new data disk in
 		
 		sudo yum install screen
 
-####5.  Adding a desktop environment to your VM [optional]:
+####4.  Updating your software managenet tool:
+	
+		sudo yum update
+		
+####5.  (NOT Completed) Adding a desktop environment to your VM [optional]:
 
 a.  Run:
 
@@ -90,7 +94,7 @@ a.  Run:
 		
 via command line to add [xfce4](http://www.xfce.org/) to your VM.
 
-####6. Setting up a remote desktop connection for your VM [optional]:
+####6. (NOT Completed) Setting up a remote desktop connection for your VM [optional]:
 
 a.  Go to your Azure portal and under **All resources** and select
     **Network Security Group**.
@@ -154,7 +158,7 @@ to
 
 a.  Run:
 
-		sudo apt-get install git
+		sudo yum install git
 
 ####8. Installing Azure Command Lines (Required to interact with other Azure services, e.g. Azure Blob Storage):
 
