@@ -156,8 +156,6 @@ to
 
 ####7. Installing git:
 
-a.  Run:
-
 		sudo yum install git
 
 ####8. Installing Azure Command Lines (Required to interact with other Azure services, e.g. Azure Blob Storage):
