@@ -1,9 +1,9 @@
 #Steps to create a Centos Linux data science virtual machine (VM) on Microsoft Azure
 
-This pages provides the details for creating an Ubuntu VM on Microsoft Azure for
-data science and machine learning applications. This page also briefly outlines how to install a Linux desktop for your VM and how to connect via Remote Desktop but these steps are only optional. Furthermore, aside from Step 1 (**Provisioning an Ubuntu VM on Microsoft Azure**), Step 2 (**Creating a DNS label name for VM**), Step 3 (**Attaching a data disk**) and Step 8 (**Installing Azure Command Lines**), other steps are generic and applicable to any Ubuntu machine.
+This pages provides the details for creating a Centos VM on Microsoft Azure for
+data science and machine learning applications.
 
-####1.  Provisioning an Ubuntu VM on Microsoft Azure:
+####1.  Provisioning a Centos VM on Microsoft Azure:
 
 a.  Log into your Azure account.
 
@@ -11,7 +11,7 @@ b.  Click on **New**.
 
 c.  Click on **Compute**.
 
-d.  Select an Ubuntu Server.
+d.  Select a Centos Server.
 	
 e.  Click on **Create** (Do not change the deployment model option).
 
@@ -73,7 +73,7 @@ d.  Connect to your VM (using a terminal emulator such as PuTTY). To
 e.  Follow the steps under **How to: Initialize a new data disk in
 	Linux** on [this page](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-how-to-attach-disk/).
 
-####6.  Installing `screen` [optional]:
+####5.  Installing `screen` [optional]:
 [`screen`](http://www.computerhope.com/unix/screen.htm) is a useful tool for multi-plexing several processes from the same terminal. To install, `screen` on your VM, run:
 		
 		sudo yum install screen
