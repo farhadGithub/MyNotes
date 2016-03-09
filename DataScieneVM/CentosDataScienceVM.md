@@ -176,8 +176,8 @@ to
 
 ####10. Installing Node.js:
 
-		sudo yum --enablerepo=epel -y  install nodejs		
-		sudo yum --enablerepo=epel -y  install npm
+		sudo yum --enablerepo=epel install nodejs		
+		sudo yum --enablerepo=epel install npm
 
 ####11. Installing Azure Command Lines (Required to interact with other Azure services, e.g. Azure Blob Storage):
 
