@@ -191,13 +191,13 @@ Blob Storage account and the name of your file.
 
 c.  To interact with Azure Blob Storage from Python, read this [link](http://blogs.msdn.com/b/tconte/archive/2013/04/17/how-to-interact-with-windows-azure-blob-storage-from-linux-using-python.aspx).
     
-####12.  Installing Anaconda (Based on instructions outlined [here](http://docs.continuum.io/anaconda/install#linux-install)):
+####12.  Installing Anaconda for Python 2.7 (Based on instructions outlined [here](http://docs.continuum.io/anaconda/install#linux-install)):
 
 a.  From the Anaconda website, copy and paste the link address of its Linux installer and then run:
 		
 		wget "link address here"
 
-Your command after pasting should look like this (Here we are first installing python 2.7):
+Your command after pasting should look like this:
 
 		wget "https://3230d63b5fc54e62148e-c95ac804525aac4b6dba79b00b39d1d3.ssl.cf1.rackcdn.com/Anaconda2-2.5.0-Linux-x86_64.sh"
 
@@ -211,7 +211,7 @@ the Anaconoda you download.
 c.  Assuming you have installed Anaconda in its default path which is your home directory, run:
 		
 		cd anaconda2
-		source bin/activate ~/anaconda2
+		source activate ~/anaconda2
 		
 ####13.  Accessing ipython Notebook Server from a Client Brower (Based on instructions outlined [here](http://jupyter-notebook.readthedocs.org/en/latest/public_server.html)):
 
@@ -249,7 +249,7 @@ c. If you also would like to add SSL for more security when your browser sends y
 
 d. Finally run `jupyter notebook` on your VM to start the notebook server. In order to connect to your notebook server from your client, enter `http:\\vm_ip_addres:8888/tree` in your browser if you have not enabled SSL or `https:\\vm_ip_addres:8888/tree` if you have done so.
 
-####14.  Adding Python 3.5:
+####14.  Adding Python 3.5 to Anaconda:
 
 		conda create -n python35 python=3.5 anaconda
 		source activate python35

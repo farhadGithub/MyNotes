@@ -258,7 +258,7 @@ c. If you also would like to add SSL for more security when your browser sends y
 
 d. Finally run `jupyter notebook` on your VM to start the notebook server. In order to connect to your notebook server from your client, enter `http:\\vm_ip_addres:8888/tree` in your browser if you have not enabled SSL or `https:\\vm_ip_addres:8888/tree` if you have done so.
 
-####13.  Adding Python 3.5:
+####13.  Adding Python 3.5 to Anaconda:
 
 		conda create -n python35 python=3.5 anaconda
 		source activate python35
