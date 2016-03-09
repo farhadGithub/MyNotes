@@ -98,11 +98,11 @@ f.  Connect to your VM (using a terminal emulator such as PuTTY). To
 g.  Follow the steps under **How to: Initialize a new data disk in
 	Linux** on [this page](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-how-to-attach-disk/).
 
-####5.  Updating your software managenet tool:
+####6.  Updating your software managenet tool:
 	
 		sudo yum update
 
-####6.  Installing the EPEL repository:
+####7.  Installing the EPEL repository:
 The EPEL repository provides useful software packages that are not included in the official CentOS or Red Hat Enterprise Linux repositories.
 		
 		sudo yum install epel-release
@@ -112,7 +112,7 @@ The EPEL repository provides useful software packages that are not included in t
 		
 		sudo yum install screen
 
-####7.  (NOT Completed) Adding a desktop environment to your VM [optional]:
+####8.  (NOT Completed) Adding a desktop environment to your VM [optional]:
 
 		sudo apt-get install xubuntu-desktop
 		sudo apt-get install xfce4
@@ -121,7 +121,7 @@ The EPEL repository provides useful software packages that are not included in t
 		
 via command line to add [xfce4](http://www.xfce.org/) to your VM.
 
-####8. (NOT Completed) Setting up a remote desktop connection for your VM [optional]:
+####9. (NOT Completed) Setting up a remote desktop connection for your VM [optional]:
 Set up a remote desktop server on your VM by following the steps described [here]
 (http://www.tweaking4all.com/software/linux-software/use-xrdp-remote-access-ubuntu-14-04/).
 
@@ -170,16 +170,16 @@ to
 		ip=127.0.0.1
 		port=ask5910
 
-####9. Installing git:
+####10. Installing git:
 
 		sudo yum install git
 
-####10. Installing Node.js:
+####11. Installing Node.js:
 
 		sudo yum --enablerepo=epel install nodejs		
 		sudo yum --enablerepo=epel install npm
 
-####11. Installing Azure Command Lines (Required to interact with other Azure services, e.g. Azure Blob Storage):
+####12. Installing Azure Command Lines (Required to interact with other Azure services, e.g. Azure Blob Storage):
 
 a.  To install Azure Command Lines, run:
         
@@ -200,7 +200,7 @@ Blob Storage account and the name of your file.
 
 c.  To interact with Azure Blob Storage from Python, read this [link](http://blogs.msdn.com/b/tconte/archive/2013/04/17/how-to-interact-with-windows-azure-blob-storage-from-linux-using-python.aspx).
     
-####12.  Installing Anaconda for Python 2.7 (Based on instructions outlined [here](http://docs.continuum.io/anaconda/install#linux-install)):
+####13.  Installing Anaconda for Python 2.7 (Based on instructions outlined [here](http://docs.continuum.io/anaconda/install#linux-install)):
 
 a.  From the Anaconda website, copy and paste the link address of its Linux installer and then run:
 		
@@ -222,7 +222,7 @@ c.  Assuming you have installed Anaconda in its default path which is your home 
 		cd anaconda2
 		source activate ~/anaconda2
 		
-####13.  Accessing ipython Notebook Server from a Client Brower (Based on instructions outlined [here](http://jupyter-notebook.readthedocs.org/en/latest/public_server.html)):
+####14.  Accessing ipython Notebook Server from a Client Brower (Based on instructions outlined [here](http://jupyter-notebook.readthedocs.org/en/latest/public_server.html)):
 
  a. If you would like to have a password to access your notebooks, follow these steps:
 		
@@ -258,7 +258,7 @@ c. If you also would like to add SSL for more security when your browser sends y
 
 d. Finally run `jupyter notebook` on your VM to start the notebook server. In order to connect to your notebook server from your client, enter `http:\\vm_ip_addres:8888/tree` in your browser if you have not enabled SSL or `https:\\vm_ip_addres:8888/tree` if you have done so.
 
-####13.  Adding Python 3.5 to Anaconda:
+####15.  Adding Python 3.5 to Anaconda:
 
 		conda create -n python35 python=3.5 anaconda
 		source activate python35
