@@ -161,22 +161,14 @@ to
 		sudo yum install git
 
 ####8. Installing Node.js:
-NodeJS is not currently part of the CentOS standard repository. Hence running the following command fails to install Node.js:
 
-		sudo yum install nodejs
+		sudo yum --enablerepo=epel -y  install nodejs		
+		sudo yum --enablerepo=epel -y  install npm
 
-Instead, you need to run the following commands as described [here](http://lexsheehan.blogspot.com/2013/03/how-to-install-nodejs-on-centos.html):
-
-		sudo yum install openssl-devel
-		sudo yum install gcc-c++
-		wget http://nodejs.org/dist/node-latest.tar.gz
-
-####8. Installing Azure Command Lines (Required to interact with other Azure services, e.g. Azure Blob Storage):
+####9. Installing Azure Command Lines (Required to interact with other Azure services, e.g. Azure Blob Storage):
 
 a.  To install Azure Command Lines, run:
         
-		sudo apt-get install nodejs
-		sudo apt-get install npm
 		sudo npm install azure-cli -g
 		
 b.  To transfer files from and to Azure Blob Storage, go to your
@@ -200,7 +192,7 @@ a.  From the Anaconda website, copy and paste the link address of its Linux inst
 		
 		wget "link address here"
 
-Your command after pasting should look like this:
+Your command after pasting should look like this (Here we are first installing python 2.7):
 
 		wget "https://3230d63b5fc54e62148e-c95ac804525aac4b6dba79b00b39d1d3.ssl.cf1.rackcdn.com/Anaconda2-2.5.0-Linux-x86_64.sh"
 
