@@ -39,11 +39,16 @@ e. You should see a rule already set up for port 22 by default. Add two new rule
 
 ####3.  Creating a DNS label name for VM:
 
-a.  Once the deployment is completed, click on the IP address of your
-    VM in the Azure portal.
+After deployment is completed,
+
+a. Click on **Resource Groups**.
+
+b. Click on your VM resource group.
+
+c. Click on **Virtual machine**.
 	
-b.  Click on **Configuration** in the **Setting** panel and enter your
-    desired name.
+d.  In the **Setting** panel, click on **Public IP address/DNS label name** and enter your
+    desired name for your VM.
 
 ####4.  Connecting to your VM:
 
@@ -74,44 +79,44 @@ c.  These two pages ([here](http://dag.wiee.rs/blog/content/improving-putty-sett
 	
 ####5.  Attaching a data disk [optional]:
 
-a.  Click on **Setting** on your VM panel.
+After deployment is completed,
 
-b.  Select **Disks**.
+a. Click on **Resource Groups**.
 
-c.  Click on **Attach New** and choose a size.
+b. Click on your VM resource group.
 
-d.  Connect to your VM (using a terminal emulator such as PuTTY). To
+c. Click on **Virtual machine**.
+	
+d.  In the **Setting** panel, select **Disks**.
+
+e.  Click on **Attach New** and choose a size.
+
+f.  Connect to your VM (using a terminal emulator such as PuTTY). To
     do so, you can use the public IP address of your VM or the DNS
     name label you created in the last step.
 
-e.  Follow the steps under **How to: Initialize a new data disk in
+g.  Follow the steps under **How to: Initialize a new data disk in
 	Linux** on [this page](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-how-to-attach-disk/).
+
+####5.  Updating your software managenet tool:
+	
+		sudo apt-get update
+
 
 ####5.  Adding a desktop environment to your VM [optional]:
 
 Run the following commands to add [xfce4](http://www.xfce.org/) to your VM:
 
-		sudo apt-get update
 		sudo apt-get install xubuntu-desktop
 		sudo apt-get install xfce4
 		sudo apt-get install xfce4-terminal
 		sudo apt-get install gnome-icon-theme-full tango-icon-theme
 		
 ####6. Setting up a remote desktop connection for your VM [optional]:
-
-a.  Go to your Azure portal and under **All resources** and select
-    **Network Security Group**.
-
-b.  Select **Inbound Security Rules** in the **Settings** panel.
-
-c.  Click on **Add** and add a rule with name: rxdp, protocol: TCP,
-    destination port range: 3389 while keeping other options at
-    their default value.
-
-d.  Set up a remote desktop server on your VM by following the steps
-    described [here]
-    (http://www.tweaking4all.com/software/linux-software/use-xrdp-remote-access-ubuntu-14-04/).
-    In short you need to run the following commands:
+Set up a remote desktop server on your VM by following the steps
+described [here]
+(http://www.tweaking4all.com/software/linux-software/use-xrdp-remote-access-ubuntu-14-04/).
+In short you need to run the following commands:
         
 		sudo apt-get install xrdp
 		echo xfce4-session > ~/.xsession
@@ -130,10 +135,9 @@ Finally run:
 		
 		sudo service xrdp restart
 
-e.  Run a remote desktop connection and use the public IP of your VM to
-    connect to your VM.
+Run a remote desktop connection and use the public IP of your VM to connect to your VM.
     
-f. If you want to always connect to the same session when you connect to your VM via remote desktop, als run:
+If you want to always connect to the same session when you connect to your VM via remote desktop, als run:
 
 		 sudo vim /etc/xrdp/xrdp.ini
 
@@ -161,13 +165,15 @@ to
 
 		sudo apt-get install git
 
-####8. Installing Azure Command Lines (Required to interact with other Azure services, e.g. Azure Blob Storage):
+####9. Installing Node.js:
+
+		sudo apt-get install nodejs
+		sudo apt-get install npm
+
+####10. Installing Azure Command Lines (Required to interact with other Azure services, e.g. Azure Blob Storage):
 
 a.  To install Azure Command Lines, run:
         
-		sudo apt-get update
-		sudo apt-get install nodejs
-		sudo apt-get install npm
 		sudo npm install azure-cli -g
 		
 b.  To transfer files from and to Azure Blob Storage, go to your
@@ -185,13 +191,13 @@ Blob Storage account and the name of your file.
 
 c.  To interact with Azure Blob Storage from Python, read this [link](http://blogs.msdn.com/b/tconte/archive/2013/04/17/how-to-interact-with-windows-azure-blob-storage-from-linux-using-python.aspx).
     
-####9.  Installing Anaconda (Based on instructions outlined [here](http://docs.continuum.io/anaconda/install#linux-install)):
+####11.  Installing Anaconda (Based on instructions outlined [here](http://docs.continuum.io/anaconda/install#linux-install)):
 
 a.  From the Anaconda website, copy and paste the link address of its Linux installer and then run:
 		
 		wget "link address here"
 
-Your command after pasting should look like this:
+Your command after pasting should look like this (Here we are first installing python 2.7):
 
 		wget "https://3230d63b5fc54e62148e-c95ac804525aac4b6dba79b00b39d1d3.ssl.cf1.rackcdn.com/Anaconda2-2.5.0-Linux-x86_64.sh"
 

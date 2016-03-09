@@ -112,7 +112,7 @@ The EPEL repository provides useful software packages that are not included in t
 		
 		sudo yum install screen
 
-####5.  (NOT Completed) Adding a desktop environment to your VM [optional]:
+####7.  (NOT Completed) Adding a desktop environment to your VM [optional]:
 
 		sudo apt-get install xubuntu-desktop
 		sudo apt-get install xfce4
@@ -121,21 +121,11 @@ The EPEL repository provides useful software packages that are not included in t
 		
 via command line to add [xfce4](http://www.xfce.org/) to your VM.
 
-####6. (NOT Completed) Setting up a remote desktop connection for your VM [optional]:
+####8. (NOT Completed) Setting up a remote desktop connection for your VM [optional]:
+Set up a remote desktop server on your VM by following the steps described [here]
+(http://www.tweaking4all.com/software/linux-software/use-xrdp-remote-access-ubuntu-14-04/).
 
-a.  Go to your Azure portal and under **All resources** and select
-    **Network Security Group**.
-
-b.  Select **Inbound Security Rules** in the **Settings** panel.
-
-c.  Click on **Add** and add a rule with name: rxdp, protocol: TCP,
-    destination port range: 3389 while keeping other options at
-    their default value.
-
-d.  Set up a remote desktop server on your VM by following the steps
-    described [here]
-    (http://www.tweaking4all.com/software/linux-software/use-xrdp-remote-access-ubuntu-14-04/).
-    In short you need to run the following commands:
+In short you need to run the following commands:
         
 		sudo apt-get install xrdp
 		echo xfce4-session > ~/.xsession
@@ -154,10 +144,9 @@ Finally run:
 		
 		sudo service xrdp restart
 
-e.  Run a remote desktop connection and use the public IP of your VM to
-    connect to your VM.
+Run a remote desktop connection and use the public IP of your VM to connect to your VM.
     
-f. If you want to always connect to the same session when you connect to your VM via remote desktop, als run:
+If you want to always connect to the same session when you connect to your VM via remote desktop, als run:
 
 		 sudo vim /etc/xrdp/xrdp.ini
 
@@ -181,16 +170,16 @@ to
 		ip=127.0.0.1
 		port=ask5910
 
-####7. Installing git:
+####9. Installing git:
 
 		sudo yum install git
 
-####8. Installing Node.js:
+####10. Installing Node.js:
 
 		sudo yum --enablerepo=epel -y  install nodejs		
 		sudo yum --enablerepo=epel -y  install npm
 
-####9. Installing Azure Command Lines (Required to interact with other Azure services, e.g. Azure Blob Storage):
+####11. Installing Azure Command Lines (Required to interact with other Azure services, e.g. Azure Blob Storage):
 
 a.  To install Azure Command Lines, run:
         
@@ -211,7 +200,7 @@ Blob Storage account and the name of your file.
 
 c.  To interact with Azure Blob Storage from Python, read this [link](http://blogs.msdn.com/b/tconte/archive/2013/04/17/how-to-interact-with-windows-azure-blob-storage-from-linux-using-python.aspx).
     
-####9.  Installing Anaconda (Based on instructions outlined [here](http://docs.continuum.io/anaconda/install#linux-install)):
+####12.  Installing Anaconda (Based on instructions outlined [here](http://docs.continuum.io/anaconda/install#linux-install)):
 
 a.  From the Anaconda website, copy and paste the link address of its Linux installer and then run:
 		
@@ -233,7 +222,7 @@ c.  Assuming you have installed Anaconda in its default path which is your home 
 		cd anaconda2
 		source bin/activate ~/anaconda2
 		
-####8.  Accessing ipython Notebook Server from a Client Brower (Based on instructions outlined [here](http://jupyter-notebook.readthedocs.org/en/latest/public_server.html)):
+####13.  Accessing ipython Notebook Server from a Client Brower (Based on instructions outlined [here](http://jupyter-notebook.readthedocs.org/en/latest/public_server.html)):
 
  a. If you would like to have a password to access your notebooks, follow these steps:
 		
