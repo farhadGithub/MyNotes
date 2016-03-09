@@ -3,7 +3,7 @@
 This pages provides the details for creating a Centos VM on Microsoft Azure for
 data science and machine learning applications.
 
-####1.  Provisioning a Centos VM on Microsoft Azure:
+####1.  Creating a Centos VM on Microsoft Azure:
 
 a.  Log into your Azure account.
 
@@ -22,6 +22,18 @@ f.  Fill in the requirement in the “Basics” panel (Instructions in
 g.  Choose a size in the next panel.
 
 h.  Start the deployment.
+
+####12.  Configuring ports:
+
+After deployment is completed,
+
+a. Click on **Resource Groups**.
+
+b. Click on your VM resource group.
+
+c. Click on **Network Security Groups**.
+
+d. Click on **Network Security Groups**.
 
 ####2.  Creating a DNS label name for VM:
 
