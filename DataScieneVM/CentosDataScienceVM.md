@@ -262,3 +262,7 @@ d. Finally run `jupyter notebook` on your VM to start the notebook server. In or
 
 		conda create -n python35 python=3.5 anaconda
 		source activate python35
+
+####16.  Installing Ruby:
+
+		sudo yum install ruby
