@@ -98,12 +98,12 @@ f.  Connect to your VM (using a terminal emulator such as PuTTY). To
 g.  Follow the steps under **How to: Initialize a new data disk in
 	Linux** on [this page](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-how-to-attach-disk/).
 
-####5.  Updating your software managenet tool:
+####6.  Updating your software managenet tool:
 	
 		sudo apt-get update
 
 
-####5.  Adding a desktop environment to your VM [optional]:
+####7.  Adding a desktop environment to your VM [optional]:
 
 Run the following commands to add [xfce4](http://www.xfce.org/) to your VM:
 
@@ -112,7 +112,7 @@ Run the following commands to add [xfce4](http://www.xfce.org/) to your VM:
 		sudo apt-get install xfce4-terminal
 		sudo apt-get install gnome-icon-theme-full tango-icon-theme
 		
-####6. Setting up a remote desktop connection for your VM [optional]:
+####8. Setting up a remote desktop connection for your VM [optional]:
 Set up a remote desktop server on your VM by following the steps
 described [here]
 (http://www.tweaking4all.com/software/linux-software/use-xrdp-remote-access-ubuntu-14-04/).
@@ -161,16 +161,16 @@ to
 		ip=127.0.0.1
 		port=ask5910
 
-####7. Installing git:
+####9. Installing git:
 
 		sudo apt-get install git
 
-####9. Installing Node.js:
+####10. Installing Node.js:
 
 		sudo apt-get install nodejs
 		sudo apt-get install npm
 
-####10. Installing Azure Command Lines (Required to interact with other Azure services, e.g. Azure Blob Storage):
+####11. Installing Azure Command Lines (Required to interact with other Azure services, e.g. Azure Blob Storage):
 
 a.  To install Azure Command Lines, run:
         
@@ -191,7 +191,7 @@ Blob Storage account and the name of your file.
 
 c.  To interact with Azure Blob Storage from Python, read this [link](http://blogs.msdn.com/b/tconte/archive/2013/04/17/how-to-interact-with-windows-azure-blob-storage-from-linux-using-python.aspx).
     
-####11.  Installing Anaconda (Based on instructions outlined [here](http://docs.continuum.io/anaconda/install#linux-install)):
+####12.  Installing Anaconda (Based on instructions outlined [here](http://docs.continuum.io/anaconda/install#linux-install)):
 
 a.  From the Anaconda website, copy and paste the link address of its Linux installer and then run:
 		
@@ -213,7 +213,7 @@ c.  Assuming you have installed Anaconda in its default path which is your home 
 		cd anaconda2
 		source bin/activate ~/anaconda2
 		
-####12.  Accessing ipython Notebook Server from a Client Brower (Based on instructions outlined [here](http://jupyter-notebook.readthedocs.org/en/latest/public_server.html)):
+####13.  Accessing ipython Notebook Server from a Client Brower (Based on instructions outlined [here](http://jupyter-notebook.readthedocs.org/en/latest/public_server.html)):
 
  a. If you would like to have a password to access your notebooks, follow these steps:
 		
@@ -249,7 +249,7 @@ c. If you also would like to add SSL for more security when your browser sends y
 
 d. Finally run `jupyter notebook` on your VM to start the notebook server. In order to connect to your notebook server from your client, enter `http:\\vm_ip_addres:8888/tree` in your browser if you have not enabled SSL or `https:\\vm_ip_addres:8888/tree` if you have done so.
 
-####13.  Adding Python 3.5:
+####14.  Adding Python 3.5:
 
 		conda create -n python35 python=3.5 anaconda
 		source activate python35
