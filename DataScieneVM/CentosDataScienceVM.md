@@ -267,6 +267,15 @@ d. Finally run `jupyter notebook` on your VM to start the notebook server. In or
 
 		sudo yum install ruby
 
-####16.  Installing PHP:
+####17.  Installing PHP:
 
 		 sudo yum install php php-mysql
+
+####18.  Installing [Microsoft Open R](https://mran.revolutionanalytics.com/download/):
+
+		wget 'https://mran.revolutionanalytics.com/install/mro/3.2.3/MRO-3.2.3.el7.x86_64.rpm'
+		sudo rpm -ivh MRO-3.2.3.el7.x86_64.rpm
+
+If you see a complaint about a dependency issue with some packages, run:
+	
+		sudo yum install package-name 	
