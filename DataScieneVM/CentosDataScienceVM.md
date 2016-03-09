@@ -279,3 +279,23 @@ d. Finally run `jupyter notebook` on your VM to start the notebook server. In or
 If you see a complaint about a dependency issue with some packages, run:
 	
 		sudo yum install package-name 	
+		
+####19.  Installing [Microsoft R Server](https://myprodscussu1.app.vssubscriptions.visualstudio.com/Downloads?PId=1962):
+
+a.
+
+		 wget 'https://mran.revolutionanalytics.com/install/mro4mrs/8.0.0/MRO-for-MRS-8.0.0.el6.x86_64.rpm'
+		 sudo rpm -ivh MRO-for-MRS-8.0.0.el6.x86_64.rpm
+		 
+b. Download `Microsoft R Server for Red Hat Linux (Dev Essentials) (x64) - (English)` from the Microsoft Visual Studio website. Currently, the file is name `en_microsoft_r_server_for_red_hat_linux_dev_essentials_x64_8167539.tar.gz`.
+
+c.
+		tar -zxvf en_microsoft_r_server_for_red_hat_linux_dev_essentials_x64_8167539.tar.gz
+		cd MRS80RHEL		
+		tar xvzf Microsoft-R-Server-8.0.0-RHEL6.tar.gz
+		pushd rrent
+		./install.sh
+
+
+
+		
