@@ -77,7 +77,7 @@ c.  These two pages ([here](http://dag.wiee.rs/blog/content/improving-putty-sett
 		Window\Lines of scrollback:
 		20000
 	
-####5.  Attaching a data disk [optional]:
+####5.  Attaching a data disk:
 
 After deployment is completed,
 
@@ -107,12 +107,12 @@ The EPEL repository provides useful software packages that are not included in t
 		
 		sudo yum install epel-release
 
-####6.  Installing `screen` [optional]:
+####6.  Installing `screen`:
 [`screen`](http://www.computerhope.com/unix/screen.htm) is a useful tool for multi-plexing several processes from the same terminal. To install, `screen` on your VM, run:
 		
 		sudo yum install screen
 
-####8.  (NOT Completed) Adding a desktop environment to your VM [optional]:
+####8.  (NOT Completed) Adding a desktop environment to your VM:
 
 		sudo apt-get install xubuntu-desktop
 		sudo apt-get install xfce4
@@ -121,7 +121,7 @@ The EPEL repository provides useful software packages that are not included in t
 		
 via command line to add [xfce4](http://www.xfce.org/) to your VM.
 
-####9. (NOT Completed) Setting up a remote desktop connection for your VM [optional]:
+####9. (NOT Completed) Setting up a remote desktop connection for your VM:
 Set up a remote desktop server on your VM by following the steps described [here]
 (http://www.tweaking4all.com/software/linux-software/use-xrdp-remote-access-ubuntu-14-04/).
 
