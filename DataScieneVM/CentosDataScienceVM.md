@@ -23,7 +23,7 @@ g.  Choose a size in the next panel.
 
 h.  Start the deployment.
 
-####12.  Configuring ports:
+####2.  Configuring ports:
 
 After deployment is completed,
 
@@ -31,11 +31,13 @@ a. Click on **Resource Groups**.
 
 b. Click on your VM resource group.
 
-c. Click on **Network Security Groups**.
+c. Click on **Network Security Group**.
 
-d. Click on **Network Security Groups**.
+d. Click on **Inbound security rules**.
 
-####2.  Creating a DNS label name for VM:
+e. You should see a rule already set up for port 22 by default. Add two new rules for ports 3389 (xrdp) and 8888 (notebooks) by clicking on **Add** and entering the port number in the **Destination port range** and assinging a name to your rule. Other options can have their default values.  
+
+####3.  Creating a DNS label name for VM:
 
 a.  Once the deployment is completed, click on the IP address of your
     VM in the Azure portal.
