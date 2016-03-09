@@ -1,9 +1,9 @@
 #Steps to create an Ubuntu Linux data science virtual machine (VM) on Microsoft Azure
 
 This pages provides the details for creating an Ubuntu VM on Microsoft Azure for
-data science and machine learning applications. This page also briefly outlines how to install a Linux desktop for your VM and how to connect via Remote Desktop but these steps are only optional. Furthermore, aside from Step 1 (**Provisioning an Ubuntu VM on Microsoft Azure**), Step 2 (**Creating a DNS label name for VM**), Step 3 (**Attaching a data disk**) and Step 8 (**Installing Azure Command Lines**), other steps are generic and applicable to any Ubuntu machine.
+data science and machine learning applications. 
 
-####1.  Provisioning an Ubuntu VM on Microsoft Azure:
+####1.  Creating an Ubuntu VM on Microsoft Azure:
 
 a.  Log into your Azure account.
 
@@ -75,7 +75,7 @@ e.  Follow the steps under **How to: Initialize a new data disk in
 
 ####5.  Adding a desktop environment to your VM [optional]:
 
-a.  Run:
+Run the following commands to add [xfce4](http://www.xfce.org/) to your VM:
 
 		sudo apt-get update
 		sudo apt-get install xubuntu-desktop
@@ -83,8 +83,6 @@ a.  Run:
 		sudo apt-get install xfce4-terminal
 		sudo apt-get install gnome-icon-theme-full tango-icon-theme
 		
-via command line to add [xfce4](http://www.xfce.org/) to your VM.
-
 ####6. Setting up a remote desktop connection for your VM [optional]:
 
 a.  Go to your Azure portal and under **All resources** and select
@@ -146,8 +144,6 @@ to
 		port=ask5910
 
 ####7. Installing git:
-
-a.  Run:
 
 		sudo apt-get install git
 
