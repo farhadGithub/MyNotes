@@ -266,3 +266,7 @@ d. Finally run `jupyter notebook` on your VM to start the notebook server. In or
 ####16.  Installing Ruby:
 
 		sudo yum install ruby
+
+####16.  Installing PHP:
+
+		 sudo yum install php php-mysql
