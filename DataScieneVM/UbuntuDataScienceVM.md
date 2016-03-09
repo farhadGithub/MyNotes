@@ -23,7 +23,21 @@ g.  Choose a size in the next panel.
 
 h.  Start the deployment.
 
-####2.  Creating a DNS label name for VM:
+####2.  Configuring ports:
+
+After deployment is completed,
+
+a. Click on **Resource Groups**.
+
+b. Click on your VM resource group.
+
+c. Click on **Network Security Group**.
+
+d. Click on **Inbound security rules**.
+
+e. You should see a rule already set up for port 22 by default. Add two new rules for ports 3389 (xrdp) and 8888 (notebooks) by clicking on **Add** and entering the port number in the **Destination port range** and assinging a name to your rule. Other options can have their default values.  
+
+####3.  Creating a DNS label name for VM:
 
 a.  Once the deployment is completed, click on the IP address of your
     VM in the Azure portal.
@@ -31,7 +45,7 @@ a.  Once the deployment is completed, click on the IP address of your
 b.  Click on **Configuration** in the **Setting** panel and enter your
     desired name.
 
-####3.  Connecting to your VM:
+####4.  Connecting to your VM:
 
 a.  On Mac or Linux, simply type `ssh VM_DNS_label_name` to connect to your VM.
 	
@@ -58,7 +72,7 @@ c.  These two pages ([here](http://dag.wiee.rs/blog/content/improving-putty-sett
 		Window\Lines of scrollback:
 		20000
 	
-####4.  Attaching a data disk [optional]:
+####5.  Attaching a data disk [optional]:
 
 a.  Click on **Setting** on your VM panel.
 
