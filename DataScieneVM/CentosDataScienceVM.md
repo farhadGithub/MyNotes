@@ -39,13 +39,18 @@ e. You should see a rule already set up for port 22 by default. Add two new rule
 
 ####3.  Creating a DNS label name for VM:
 
-a.  Once the deployment is completed, click on the IP address of your
-    VM in the Azure portal.
-	
-b.  Click on **Configuration** in the **Setting** panel and enter your
-    desired name.
+After deployment is completed,
 
-####3.  Connecting to your VM:
+a. Click on **Resource Groups**.
+
+b. Click on your VM resource group.
+
+c. Click on **Virtual machine**.
+	
+d.  In the **Setting** panel, click on **Public IP address/DNS label name** and enter your
+    desired name for your VM.
+
+####4.  Connecting to your VM:
 
 a.  On Mac or Linux, simply type `ssh VM_DNS_label_name` to connect to your VM.
 	
@@ -72,19 +77,25 @@ c.  These two pages ([here](http://dag.wiee.rs/blog/content/improving-putty-sett
 		Window\Lines of scrollback:
 		20000
 	
-####4.  Attaching a data disk [optional]:
+####5.  Attaching a data disk [optional]:
 
-a.  Click on **Setting** on your VM panel.
+After deployment is completed,
 
-b.  Select **Disks**.
+a. Click on **Resource Groups**.
 
-c.  Click on **Attach New** and choose a size.
+b. Click on your VM resource group.
 
-d.  Connect to your VM (using a terminal emulator such as PuTTY). To
+c. Click on **Virtual machine**.
+	
+d.  In the **Setting** panel, select **Disks**.
+
+e.  Click on **Attach New** and choose a size.
+
+f.  Connect to your VM (using a terminal emulator such as PuTTY). To
     do so, you can use the public IP address of your VM or the DNS
     name label you created in the last step.
 
-e.  Follow the steps under **How to: Initialize a new data disk in
+g.  Follow the steps under **How to: Initialize a new data disk in
 	Linux** on [this page](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-how-to-attach-disk/).
 
 ####5.  Updating your software managenet tool:
