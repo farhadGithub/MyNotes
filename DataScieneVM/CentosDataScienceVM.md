@@ -256,7 +256,7 @@ c. If you also would like to add SSL for more security when your browser sends y
  		c.NotebookApp.certfile = u'/absolute/path/to/your/certificate/mycert.pem'
  		c.NotebookApp.keyfile = u'/absolute/path/to/your/certificate/mykey.key'
 
-d. Finally run `ipython notebook` on your VM to start the notebook server. In order to connect to your notebook server from your client, enter `http:\\vm_ip_addres:8888/tree` in your browser if you have not enabled SSL or `https:\\vm_ip_addres:8888/tree` if you have done so.
+d. Finally run `jupyter notebook` on your VM to start the notebook server. In order to connect to your notebook server from your client, enter `http:\\vm_ip_addres:8888/tree` in your browser if you have not enabled SSL or `https:\\vm_ip_addres:8888/tree` if you have done so.
 
 ####13.  Adding Python 3.5:
 
