@@ -331,6 +331,7 @@ a.
 b. Download `Microsoft R Server for Red Hat Linux (Dev Essentials) (x64) - (English)` from the Microsoft Visual Studio website. Currently, the file is name `en_microsoft_r_server_for_red_hat_linux_dev_essentials_x64_8167539.tar.gz`.
 
 c.
+	
 		tar -zxvf en_microsoft_r_server_for_red_hat_linux_dev_essentials_x64_8167539.tar.gz
 		cd MRS80RHEL		
 		tar xvzf Microsoft-R-Server-8.0.0-RHEL6.tar.gz
