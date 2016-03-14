@@ -77,7 +77,7 @@ c.  These two pages ([here](http://dag.wiee.rs/blog/content/improving-putty-sett
 		Window\Lines of scrollback:
 		20000
 	
-####5.  Attaching a data disk [optional]:
+####5.  Attaching a data disk:
 
 After deployment is completed,
 
@@ -249,7 +249,7 @@ c. If you also would like to add SSL for more security when your browser sends y
 
 d. Finally run `jupyter notebook` on your VM to start the notebook server. In order to connect to your notebook server from your client, enter `http:\\vm_ip_addres:8888/tree` in your browser if you have not enabled SSL or `https:\\vm_ip_addres:8888/tree` if you have done so.
 
-####14.  Adding Python 3.5 Environement to Anaconda:
+####14.  Adding a Python 3.5 Environement to Anaconda:
 
 		conda create -n python35 python=3.5 anaconda
 		source activate python35

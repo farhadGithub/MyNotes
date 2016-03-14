@@ -212,7 +212,7 @@ Your command after pasting should look like this:
 
 b.  Run:
       
-		sudo bash Anaconda2-2.5.0-Linux-x86_64.sh
+		bash Anaconda2-2.5.0-Linux-x86_64.sh
 
 The name of the file might be different depending on what version of
 the Anaconoda you download.
@@ -222,13 +222,13 @@ c.  Assuming you have installed Anaconda in its default path which is your home 
 		cd anaconda2
 		source activate ~/anaconda2
 		
-####14.  Accessing ipython Notebook Server from a Client Brower (Based on instructions outlined [here](http://jupyter-notebook.readthedocs.org/en/latest/public_server.html)):
+####13.  Accessing ipython Notebook Server from a Client Browser (Based on instructions outlined [here](http://jupyter-notebook.readthedocs.org/en/latest/public_server.html)):
 
  a. If you would like to have a password to access your notebooks, follow these steps:
 		
 		python
 		In [1]: from notebook.auth import passwd
-		In [2]: passwd()
+		In [2]: passwd(algorithm='sha224')
 		Enter password:
 		Verify password:
 		Out[2]: 'sha1:67c9e60bb8b6:9ffede0825894254b2e042ea597d771089e11aed'
@@ -258,20 +258,36 @@ c. If you also would like to add SSL for more security when your browser sends y
 
 d. Finally run `jupyter notebook` on your VM to start the notebook server. In order to connect to your notebook server from your client, enter `http:\\vm_ip_addres:8888/tree` in your browser if you have not enabled SSL or `https:\\vm_ip_addres:8888/tree` if you have done so.
 
-####15.  Adding Python 3.5 to Anaconda:
+####15.  Adding a Python 3.5 Environement to Anaconda:
 
 		conda create -n python35 python=3.5 anaconda
 		source activate python35
 
-####16.  Installing Ruby:
+####16.  Adding Python 2.7 Environement to Anaconda:
+
+		conda create -n python27 python=2.7 anaconda
+		source activate python27
+
+####17.  Creating both Python 2.7 and 3.5 Notebooks:
+
+		source activate python35
+		#conda install notebook ipykernel
+		jupyter kernelspec install-self --user
+		source activate python27
+		#conda install notebook ipykernel
+		jupyter kernelspec install-self --user
+		
+Regardless of the environment in which you are, by running `jupyter notebook`, you should be able to create both python 2.7 and 3.5 notebooks.
+
+####18.  Installing Ruby:
 
 		sudo yum install ruby
 
-####17.  Installing PHP:
+####19.  Installing PHP:
 
 		 sudo yum install php php-mysql
 
-####18.  Installing [Microsoft Open R](https://mran.revolutionanalytics.com/download/):
+####20.  Installing [Microsoft Open R](https://mran.revolutionanalytics.com/download/):
 
 		wget 'https://mran.revolutionanalytics.com/install/mro/3.2.3/MRO-3.2.3.el7.x86_64.rpm'
 		sudo rpm -ivh MRO-3.2.3.el7.x86_64.rpm
@@ -280,7 +296,7 @@ If you see a complaint about a dependency issue with some packages, run:
 	
 		sudo yum install package-name 	
 		
-####19.  Installing [Microsoft R Server](https://myprodscussu1.app.vssubscriptions.visualstudio.com/Downloads?PId=1962):
+####21.  Installing [Microsoft R Server](https://myprodscussu1.app.vssubscriptions.visualstudio.com/Downloads?PId=1962):
 
 a.
 
