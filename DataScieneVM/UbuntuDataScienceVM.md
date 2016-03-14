@@ -203,7 +203,7 @@ Your command after pasting should look like this:
 
 b.  Run:
       
-		sudo bash Anaconda2-2.5.0-Linux-x86_64.sh
+		bash Anaconda2-2.5.0-Linux-x86_64.sh
 
 The name of the file might be different depending on what version of
 the Anaconoda you download.
