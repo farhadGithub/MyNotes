@@ -213,13 +213,13 @@ c.  Assuming you have installed Anaconda in its default path which is your home 
 		cd anaconda2
 		source activate ~/anaconda2
 		
-####13.  Accessing ipython Notebook Server from a Client Brower (Based on instructions outlined [here](http://jupyter-notebook.readthedocs.org/en/latest/public_server.html)):
+####13.  Accessing ipython Notebook Server from a Client Browser (Based on instructions outlined [here](http://jupyter-notebook.readthedocs.org/en/latest/public_server.html)):
 
  a. If you would like to have a password to access your notebooks, follow these steps:
 		
 		python
 		In [1]: from notebook.auth import passwd
-		In [2]: passwd()
+		In [2]: passwd(algorithm='sha224')
 		Enter password:
 		Verify password:
 		Out[2]: 'sha1:67c9e60bb8b6:9ffede0825894254b2e042ea597d771089e11aed'
@@ -249,7 +249,12 @@ c. If you also would like to add SSL for more security when your browser sends y
 
 d. Finally run `jupyter notebook` on your VM to start the notebook server. In order to connect to your notebook server from your client, enter `http:\\vm_ip_addres:8888/tree` in your browser if you have not enabled SSL or `https:\\vm_ip_addres:8888/tree` if you have done so.
 
-####14.  Adding Python 3.5 to Anaconda:
+####14.  Adding Python 3.5 Environement to Anaconda:
 
 		conda create -n python35 python=3.5 anaconda
 		source activate python35
+
+####15.  Adding Python 2.7 Environement to Anaconda:
+
+		conda create -n python27 python=2.7 anaconda
+		source activate python27
