@@ -258,3 +258,11 @@ d. Finally run `jupyter notebook` on your VM to start the notebook server. In or
 
 		conda create -n python27 python=2.7 anaconda
 		source activate python27
+
+####16.  Creating both Python 2.7 and 3.5 Notebooks:
+
+		source activate python35
+		conda install notebook ipykernel
+		source activate python27
+		conda install notebook ipykernel
+
