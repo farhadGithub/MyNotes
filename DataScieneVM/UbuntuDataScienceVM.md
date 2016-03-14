@@ -96,7 +96,32 @@ f.  Connect to your VM (using a terminal emulator such as PuTTY). To
     name label you created in the last step.
 
 g.  Follow the steps under **How to: Initialize a new data disk in
-	Linux** on [this page](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-how-to-attach-disk/).
+	Linux** on [this page](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-how-to-attach-disk/). Mainly, you need to do as follows after connecting to your VM. Run:
+        
+        lsscsi 
+
+To find out the device id. If `lsscsi` is not installed, run: 
+
+        sudo apt-get install lsscsi
+
+In most cases, your new disk is identified by `/dev/sdc`. Assuming, this is the case, run:
+
+        sudo fdisk /dev/sdc
+
+
+You may need to run `sudo` with the `-i` option. Answer the questions raised by `fdisk` according to what outlined in the [link](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-linux-how-to-attach-disk/). Then run:
+
+        sudo mkfs -t ext4 /dev/sdc1
+
+Create a directory to link to the disk:
+
+        sudo mkdir /datadrive
+        sudo -i blkid
+
+Note the `UUID` of `/dev/sdc1`. Then edit `/etc/fstab` by adding a line similar to this one:
+
+        UUID=33333333-3b3b-3c3c-3d3d-3e3e3e3e3e3e   /datadrive   ext4   defaults   1   2
+ 
 
 ####6.  Updating your software managenet tool:
 	
