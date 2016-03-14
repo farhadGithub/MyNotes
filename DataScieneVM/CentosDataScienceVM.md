@@ -102,7 +102,7 @@ g.  Follow the steps under **How to: Initialize a new data disk in
 
 To find out the device id. If `lsscsi` is not installed, run: 
 
-        yum install lsscsi
+        sudo yum install lsscsi
 
 In most cases, your new disk is identified by `/dev/sdc`. Assuming, this is the case, run:
 
