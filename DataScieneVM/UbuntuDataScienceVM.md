@@ -268,3 +268,4 @@ d. Finally run `jupyter notebook` on your VM to start the notebook server. In or
 		#conda install notebook ipykernel
 		jupyter kernelspec install-self --user
 		
+Regardless of the environment in which you are, by running `jupyter notebook`, you should be able to create both python 2.7 and 3.5 notebooks.
