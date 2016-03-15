@@ -326,6 +326,7 @@ If you see a complaint about a dependency issue with some packages, run:
 a.
 
 		 wget 'https://mran.revolutionanalytics.com/install/mro4mrs/8.0.0/MRO-for-MRS-8.0.0.el6.x86_64.rpm'
+		 sudo yum clean all 
 		 sudo rpm -ivh MRO-for-MRS-8.0.0.el6.x86_64.rpm
 		 
 b. Download `Microsoft R Server for Red Hat Linux (Dev Essentials) (x64) - (English)` from the Microsoft Visual Studio website. Currently, the file is name `en_microsoft_r_server_for_red_hat_linux_dev_essentials_x64_8167539.tar.gz`.
