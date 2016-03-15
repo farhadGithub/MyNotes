@@ -186,6 +186,7 @@ the Anaconoda you download.
 
 c.  Assuming you have installed Anaconda in its default path which is your home directory, run:
 		
+		source ~/.bashrc
 		cd anaconda2
 		source activate ~/anaconda2
 		
