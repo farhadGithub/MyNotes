@@ -137,74 +137,16 @@ The EPEL repository provides useful software packages that are not included in t
 		
 		sudo yum install screen
 
-####8.  (NOT Completed) Adding a desktop environment to your VM:
-
-		sudo apt-get install xubuntu-desktop
-		sudo apt-get install xfce4
-		sudo apt-get install xfce4-terminal
-		sudo apt-get install gnome-icon-theme-full tango-icon-theme
-		
-via command line to add [xfce4](http://www.xfce.org/) to your VM.
-
-####9. (NOT Completed) Setting up a remote desktop connection for your VM:
-Set up a remote desktop server on your VM by following the steps described [here]
-(http://www.tweaking4all.com/software/linux-software/use-xrdp-remote-access-ubuntu-14-04/).
-
-In short you need to run the following commands:
-        
-		sudo apt-get install xrdp
-		echo xfce4-session > ~/.xsession
-		sudo nano /etc/xrdp/startwm.sh
-
-The content of `startwm.sh` should be as follows:
-
-		#!/bin/sh
-		if [ -r /etc/default/locale ]; then
-			. /etc/default/locale
-			export LANG LANGUAGE
-		fi	
-		startxfce4
-		
-Finally run:
-		
-		sudo service xrdp restart
-
-Run a remote desktop connection and use the public IP of your VM to connect to your VM.
-    
-If you want to always connect to the same session when you connect to your VM via remote desktop, als run:
-
-		 sudo vim /etc/xrdp/xrdp.ini
-
-And change the following lines:
-
-		[xrdp1]
-		name=sesman-vnc
-		lib=libvnc.so
-		username=ask
-		password=ask
-		ip=127.0.0.1
-		port=-1
-
-to
-
-		[xrdp1]
-		name=sesman-vnc
-		lib=libvnc.so
-		username=ask
-		password=ask
-		ip=127.0.0.1
-		port=ask5910
-
-####10. Installing git:
+####7. Installing git:
 
 		sudo yum install git
 
-####11. Installing Node.js:
+####8. Installing Node.js:
 
 		sudo yum --enablerepo=epel install nodejs		
 		sudo yum --enablerepo=epel install npm
 
-####12. Installing Azure Command Lines (Required to interact with other Azure services, e.g. Azure Blob Storage):
+####9. Installing Azure Command Lines (Required to interact with other Azure services, e.g. Azure Blob Storage):
 
 a.  To install Azure Command Lines, run:
         
@@ -225,7 +167,7 @@ Blob Storage account and the name of your file.
 
 c.  To interact with Azure Blob Storage from Python, read this [link](http://blogs.msdn.com/b/tconte/archive/2013/04/17/how-to-interact-with-windows-azure-blob-storage-from-linux-using-python.aspx).
     
-####13.  Installing Anaconda for Python 2.7 (Based on instructions outlined [here](http://docs.continuum.io/anaconda/install#linux-install)):
+####10.  Installing Anaconda for Python 2.7 (Based on instructions outlined [here](http://docs.continuum.io/anaconda/install#linux-install)):
 
 a.  From the Anaconda website, copy and paste the link address of its Linux installer and then run:
 		
