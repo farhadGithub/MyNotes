@@ -11,7 +11,7 @@ b.  Click on **New**.
 
 c.  Click on **Compute**.
 
-d.  Select a Centos Server.
+d.  Select a Centos Server (In this document, we assume the VM is based on Centos 6.5 as the most recent version of Microsoft R Server only works with this version of Centos).
 	
 e.  Click on **Create** (Do not change the deployment model option).
 
