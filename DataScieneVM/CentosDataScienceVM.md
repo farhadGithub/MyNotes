@@ -190,7 +190,7 @@ c.  Assuming you have installed Anaconda in its default path which is your home 
 		cd anaconda2
 		source activate ~/anaconda2
 		
-####13.  Accessing ipython Notebook Server from a Client Browser (Based on instructions outlined [here](http://jupyter-notebook.readthedocs.org/en/latest/public_server.html)):
+####11.  Accessing ipython Notebook Server from a Client Browser (Based on instructions outlined [here](http://jupyter-notebook.readthedocs.org/en/latest/public_server.html)):
 
  a. If you would like to have a password to access your notebooks, follow these steps:
 		
@@ -226,28 +226,28 @@ c. If you also would like to add SSL for more security when your browser sends y
 
 d. Finally run `jupyter notebook` on your VM to start the notebook server. In order to connect to your notebook server from your client, enter `http:\\vm_ip_addres:8888/tree` in your browser if you have not enabled SSL or `https:\\vm_ip_addres:8888/tree` if you have done so.
 
-####15.  Adding a Python 3.5 Environement to Anaconda:
+####12.  Adding a Python 3.5 Environement to Anaconda:
 
 		conda create -n python35 python=3.5 anaconda
 		source activate python35
 
-####16.  Adding Python 2.7 Environement to Anaconda:
+####13.  Adding Python 2.7 Environement to Anaconda:
 
 		conda create -n python27 python=2.7 anaconda
 		source activate python27
 
-####17.  Creating both Python 2.7 and 3.5 Notebooks:
+####14.  Creating both Python 2.7 and 3.5 Notebooks:
 
 		source activate python35
-		#conda install notebook ipykernel
+		conda install notebook ipykernel
 		jupyter kernelspec install-self --user
 		source activate python27
-		#conda install notebook ipykernel
+		conda install notebook ipykernel
 		jupyter kernelspec install-self --user
 		
 Regardless of the environment in which you are, by running `jupyter notebook`, you should be able to create both python 2.7 and 3.5 notebooks.
 
-####18.  Installing Ruby:
+####15.  Installing Ruby:
 
 		sudo yum install ruby
 
