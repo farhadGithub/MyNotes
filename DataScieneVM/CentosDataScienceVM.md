@@ -343,6 +343,7 @@ c.
 		tar xvzf Microsoft-R-Server-8.0.0-RHEL6.tar.gz
 		pushd rrent
 		./install.sh
+		popd
 
 
 
