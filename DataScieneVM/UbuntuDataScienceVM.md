@@ -323,18 +323,19 @@ If you see a complaint about a dependency issue with some packages, run:
 		conda update pyzmq
 		#sudo apt-get install libzmq3-dev python-zmq
 		
-Start R (perhaps in `sudo`) and run:
+Run:
 
-		install.packages(c('rzmq','repr','IRkernel','IRdisplay'),repos = c('http://irkernel.github.io/', getOption('repos')))
-		IRkernel::installspec()
-
-You may also need to run:
-
+		sudo R
 		install.packages("devtools")
 		install.packages("RCurl")
 		library(devtools)
+		install.packages(c('rzmq','repr','IRkernel','IRdisplay'),repos = c('http://irkernel.github.io/', getOption('repos')))
+		q()
 		
-prior to installing the `IRkernel` package and related packages. As a result of install `devtools`, you may also need to install various other Linux packages.
+		R
+		IRkernel::installspec()
+
+When installing `devtools` in R, you may also exit R and install other Linux packages.
 
 And then start the server (i.e. `jupyter notebook`).		
 
