@@ -299,7 +299,7 @@ Regardless of the environment in which you are, by running `jupyter notebook`, y
 ####17.  Adding the Jupyter server as a start-up service:
 
 		cd ~
-		echo "cd ${HOME};setuid ${USER} nohup ${USER}/anaconda2/bin/ipython notebook > /tmp/t.log 2>&1 < /dev/null &" > start_ipython
+		echo "cd ${HOME};setuid ${USER} nohup ${HOME}/anaconda2/bin/ipython notebook > /tmp/t.log 2>&1 < /dev/null &" > start_ipython
 		sudo mv start_ipython /etc/init.d  
 		cd /etc/init.d
 		sudo chmod +x /etc/init.d/start_ipython 
