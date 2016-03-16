@@ -332,7 +332,7 @@ You may also need to run:
 		install.packages("devtools")
 		library(devtools)
 		
-prior to installing the `IRkernel` package and related packages.
+prior to installing the `IRkernel` package and related packages. As a result of install `devtools`, you may also need to install various other Linux packages.
 
 And then start the server (i.e. `jupyter notebook`).		
 
