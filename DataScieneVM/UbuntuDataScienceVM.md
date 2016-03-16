@@ -23,7 +23,7 @@ g.  Choose a size in the next panel.
 
 h.  Start the deployment.
 
-####2.  Configuring ports:
+####2.  Configuring Ports:
 
 After deployment is completed,
 
@@ -37,7 +37,7 @@ d. Click on **Inbound security rules**.
 
 e. You should see a rule already set up for port 22 by default. Add two new rules for ports 3389 (xrdp) and 8888 (notebooks) by clicking on **Add** and entering the port number in the **Destination port range** and assinging a name to your rule. Other options can have their default values.  
 
-####3.  Creating a DNS label name for VM:
+####3.  Creating a DNS Label Name for VM:
 
 After deployment is completed,
 
@@ -50,7 +50,7 @@ c. Click on **Virtual machine**.
 d.  In the **Setting** panel, click on **Public IP address/DNS label name** and enter your
     desired name for your VM.
 
-####4.  Connecting to your VM:
+####4.  Connecting to Your VM:
 
 a.  On Mac or Linux, simply type `ssh VM_DNS_label_name` to connect to your VM.
 	
@@ -77,7 +77,7 @@ c.  These two pages ([here](http://dag.wiee.rs/blog/content/improving-putty-sett
 		Window\Lines of scrollback:
 		20000
 	
-####5.  Attaching a data disk:
+####5.  Attaching a Data Disk:
 
 After deployment is completed,
 
@@ -123,12 +123,12 @@ Note the `UUID` of `/dev/sdc1`. Then edit `/etc/fstab` by adding a line similar 
         UUID=33333333-3b3b-3c3c-3d3d-3e3e3e3e3e3e   /datadrive   ext4   defaults   1   2
  
 
-####6.  Updating your software managenet tool:
+####6.  Updating Your Software Managenet Tool:
 	
 		sudo apt-get update
 
 
-####7.  Adding a desktop environment to your VM [optional]:
+####7.  Adding a Desktop Environment to Your VM [optional]:
 
 Run the following commands to add [xfce4](http://www.xfce.org/) to your VM:
 
@@ -137,7 +137,7 @@ Run the following commands to add [xfce4](http://www.xfce.org/) to your VM:
 		sudo apt-get install xfce4-terminal
 		sudo apt-get install gnome-icon-theme-full tango-icon-theme
 		
-####8. Setting up a remote desktop connection for your VM [optional]:
+####8. Setting up a Remote Desktop Connection for Your VM [optional]:
 Set up a remote desktop server on your VM by following the steps
 described [here]
 (http://www.tweaking4all.com/software/linux-software/use-xrdp-remote-access-ubuntu-14-04/).
@@ -186,7 +186,7 @@ to
 		ip=127.0.0.1
 		port=ask5910
 
-####9. Installing git:
+####9. Installing Git:
 
 		sudo apt-get install git
 
@@ -239,7 +239,7 @@ c.  Assuming you have installed Anaconda in its default path which is your home 
 		cd anaconda2
 		source activate ~/anaconda2
 		
-####13.  Accessing ipython Notebook Server from a Client Browser (Based on instructions outlined [here](http://jupyter-notebook.readthedocs.org/en/latest/public_server.html)):
+####13.  Accessing IPython Notebook Server from a Client Browser (Based on instructions outlined [here](http://jupyter-notebook.readthedocs.org/en/latest/public_server.html)):
 
  a. If you would like to have a password to access your notebooks, follow these steps:
 		
@@ -285,7 +285,7 @@ d. Finally run `jupyter notebook` on your VM to start the notebook server. In or
 		conda create -n python27 python=2.7 anaconda
 		source activate python27
 
-####16.  Creating both Python 2.7 and 3.5 Notebooks:
+####16.  Creating Both Python 2.7 and 3.5 Notebooks:
 
 		source activate python35
 		conda install notebook ipykernel
