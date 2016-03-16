@@ -256,7 +256,7 @@ Regardless of the environment in which you are, by running `jupyter notebook`, y
 		 sudo yum install php php-mysql
 
 ####20.  Installing [Microsoft R Open](https://mran.revolutionanalytics.com/download/):
-Note that between steps 20 and 21 (i.e. installing MRO and MRS), one choose one. Run:
+Note that between steps 20 and 21 (i.e. installing MRO and MRS), the user choose one. Furthermore, we assume in these steps that the VM is running on Centos 6.x:
 
 		wget 'https://mran.revolutionanalytics.com/install/mro/3.2.3/MRO-3.2.3.el6.x86_64.rpm'
 		sudo rpm -ivh MRO-3.2.3.el6.x86_64.rpm
