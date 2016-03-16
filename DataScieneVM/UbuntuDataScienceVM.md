@@ -306,15 +306,16 @@ Regardless of the environment in which you are, by running `jupyter notebook`, y
 Finally, we need to reboot to start the service
 
 		sudo reboot
+		
 ####18.  Installing [Microsoft R Open](https://mran.revolutionanalytics.com/download/):
-Note that between steps 20 and 21 (i.e. installing MRO and MRS), one choose one. Run:
+Note that between steps 20 and 21 (i.e. installing MRO and MRS), one choose one. Furthermore, we assume in these steps that the VM is running on Ubuntu 14. Run:
 
-		wget 'https://mran.revolutionanalytics.com/install/mro/3.2.3/MRO-3.2.3.el7.x86_64.rpm'
-		sudo rpm -ivh MRO-3.2.3.el7.x86_64.rpm
+		wget 'https://mran.revolutionanalytics.com/install/mro/3.2.3/MRO-3.2.3-Ubuntu-14.4.x86_64.deb'
+		sudo dpkg -i MRO-3.2.3-Ubuntu-14.4.x86_64.deb
 
 If you see a complaint about a dependency issue with some packages, run:
 	
-		sudo yum install package-name 	
+		sudo apt-get install package-name 	
 		
 ####19.  Installing [Microsoft R Server](https://myprodscussu1.app.vssubscriptions.visualstudio.com/Downloads?PId=1962):
 
