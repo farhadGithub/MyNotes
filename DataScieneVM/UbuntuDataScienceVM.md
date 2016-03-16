@@ -317,7 +317,7 @@ If you see a complaint about a dependency issue with some packages, run:
 	
 		sudo apt-get install package-name 	
 		
-####20.  Adding R Kernel to Jupyter server:
+####19.  Adding R Kernel to Jupyter server:
 
 		conda update ipython 
 		conda update pyzmq
