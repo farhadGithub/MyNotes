@@ -231,7 +231,7 @@ d. Finally run `jupyter notebook` on your VM to start the notebook server. In or
 		conda create -n python35 python=3.5 anaconda
 		source activate python35
 
-####13.  Adding Python 2.7 Environement to Anaconda:
+####13.  Adding a Python 2.7 Environement to Anaconda:
 
 		conda create -n python27 python=2.7 anaconda
 		source activate python27
@@ -288,7 +288,7 @@ c.
 		./install.sh
 		popd
 
-####22.  Adding the Jupyter server as a start-up service:
+####22.  Adding the Jupyter Server as a Start-up Service:
 
 		cd ~
 		echo "cd ${HOME};setuid ${USER} nohup ${USER}/anaconda2/bin/ipython notebook > /tmp/t.log 2>&1 < /dev/null &" > start_ipython
