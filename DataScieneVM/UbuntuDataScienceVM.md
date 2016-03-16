@@ -326,7 +326,14 @@ Start R (perhaps in `sudo`) and run:
 
 		install.packages(c('rzmq','repr','IRkernel','IRdisplay'),repos = c('http://irkernel.github.io/', getOption('repos')))
 		IRkernel::installspec()
+
+You may also need to run:
+
+		install.packages("devtools")
+		library(devtools)
 		
+prior to installing the `IRkernel` package and related packages.
+
 And then restart the Kernel.		
 
 
