@@ -287,10 +287,21 @@ d. Finally run `jupyter notebook` on your VM to start the notebook server. In or
 ####16.  Creating both Python 2.7 and 3.5 Notebooks:
 
 		source activate python35
-		#conda install notebook ipykernel
+		conda install notebook ipykernel
 		jupyter kernelspec install-self --user
 		source activate python27
-		#conda install notebook ipykernel
+		conda install notebook ipykernel
 		jupyter kernelspec install-self --user
 		
 Regardless of the environment in which you are, by running `jupyter notebook`, you should be able to create both python 2.7 and 3.5 notebooks.
+
+####17.  Adding the Jupyter server as start-up service:
+
+		cd /etc/init.d
+		echo "cd ${HOME};setuid ${USER} nohup ${USER}/anaconda2/bin/ipython notebook > /tmp/t.log 2>&1 < /dev/null &" > start_ipython
+		sudo chmod +x /etc/init.d/start_ipython 
+		sudo update-rc.d start_ipython defaults
+		
+Finally, we need to reboot to start the service
+
+		sudo reboot
