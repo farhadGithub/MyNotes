@@ -321,6 +321,7 @@ If you see a complaint about a dependency issue with some packages, run:
 
 		conda update ipython 
 		conda update pyzmq
+		#sudo apt-get install libzmq3-dev python-zmq
 		
 Start R (perhaps in `sudo`) and run:
 
@@ -330,6 +331,7 @@ Start R (perhaps in `sudo`) and run:
 You may also need to run:
 
 		install.packages("devtools")
+		install.packages("RCurl")
 		library(devtools)
 		
 prior to installing the `IRkernel` package and related packages. As a result of install `devtools`, you may also need to install various other Linux packages.
