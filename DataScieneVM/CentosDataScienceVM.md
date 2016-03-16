@@ -323,6 +323,10 @@ And then start the server (i.e. `jupyter notebook`).
 Finally, we need to reboot to start the service
 
 		sudo reboot
+		
+And if you want to stop this service, run:
+
+		sudo update-rc.d -f start_ipython remove
 
 
 		
