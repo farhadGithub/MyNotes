@@ -288,7 +288,30 @@ c.
 		./install.sh
 		popd
 
-####22.  Adding the Jupyter Server as a Start-up Service:
+####22.  Adding R Kernel to Jupyter server:
+
+		conda update ipython 
+		conda update pyzmq
+		sudo yum --enablerepo=epel install czmq-devel
+
+Run:
+
+		sudo R
+		install.packages("devtools")
+		install.packages("RCurl")
+		library(devtools)
+		install.packages(c('rzmq','repr','IRkernel','IRdisplay'),repos = c('http://irkernel.github.io/', getOption('repos')))
+		q()
+		
+		R
+		IRkernel::installspec()
+
+When installing `devtools` in R, you may also exit R and install other Linux packages.
+
+And then start the server (i.e. `jupyter notebook`).		
+
+
+####23.  Adding the Jupyter Server as a Start-up Service:
 
 		cd ~
 		echo "cd ${HOME};setuid ${USER} nohup ${HOME}/anaconda2/bin/ipython notebook > /tmp/t.log 2>&1 < /dev/null &" > start_ipython
