@@ -258,7 +258,7 @@ Regardless of the environment in which you are, by running `jupyter notebook`, y
 ####20.  Installing [Microsoft R Open](https://mran.revolutionanalytics.com/download/):
 Note that between steps 20 and 21 (i.e. installing MRO and MRS), one choose one. Run:
 
-		wget 'https://mran.revolutionanalytics.com/install/mro/3.2.3/MRO-3.2.3.el7.x86_64.rpm'
+		wget 'https://mran.revolutionanalytics.com/install/mro/3.2.3/MRO-3.2.3.el6.x86_64.rpm'
 		sudo rpm -ivh MRO-3.2.3.el7.x86_64.rpm
 
 If you see a complaint about a dependency issue with some packages, run:
