@@ -327,8 +327,6 @@ If you see a complaint about a dependency issue with some packages, run:
 		conda update pyzmq
 		#sudo apt-get install libzmq3-dev python-zmq
 		
-Run:
-
 		sudo R
 		install.packages("devtools")
 		install.packages("RCurl")
