@@ -339,7 +339,7 @@ Run:
 		R
 		IRkernel::installspec()
 
-When installing `devtools` in R, you may also exit R and install other Linux packages.
+When installing `devtools` in R, you may also need to exit R and install other Linux packages.
 
 And then start the server (i.e. `jupyter notebook`).		
 
