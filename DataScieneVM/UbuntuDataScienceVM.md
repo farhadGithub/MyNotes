@@ -235,6 +235,7 @@ the Anaconoda you download.
 
 c.  Assuming you have installed Anaconda in its default path which is your home directory, run:
 		
+		source ~/.bashrc
 		cd anaconda2
 		source activate ~/anaconda2
 		
@@ -305,3 +306,36 @@ Regardless of the environment in which you are, by running `jupyter notebook`, y
 Finally, we need to reboot to start the service
 
 		sudo reboot
+####18.  Installing [Microsoft R Open](https://mran.revolutionanalytics.com/download/):
+Note that between steps 20 and 21 (i.e. installing MRO and MRS), one choose one. Run:
+
+		wget 'https://mran.revolutionanalytics.com/install/mro/3.2.3/MRO-3.2.3.el7.x86_64.rpm'
+		sudo rpm -ivh MRO-3.2.3.el7.x86_64.rpm
+
+If you see a complaint about a dependency issue with some packages, run:
+	
+		sudo yum install package-name 	
+		
+####19.  Installing [Microsoft R Server](https://myprodscussu1.app.vssubscriptions.visualstudio.com/Downloads?PId=1962):
+
+a.
+
+		 wget 'https://mran.revolutionanalytics.com/install/mro4mrs/8.0.0/MRO-for-MRS-8.0.0.el6.x86_64.rpm'
+		 sudo yum clean all 
+		 sudo rpm -ivh MRO-for-MRS-8.0.0.el6.x86_64.rpm
+
+If you see a complaint about a dependency issue with some packages, run:
+	
+		sudo yum install package-name 	
+		 
+b. Download `Microsoft R Server for Red Hat Linux (Dev Essentials) (x64) - (English)` from the Microsoft Visual Studio website. Currently, the file is name `en_microsoft_r_server_for_red_hat_linux_dev_essentials_x64_8167539.tar.gz`.
+
+c.
+	
+		tar -zxvf en_microsoft_r_server_for_red_hat_linux_dev_essentials_x64_8167539.tar.gz
+		cd MRS80RHEL		
+		tar xvzf Microsoft-R-Server-8.0.0-RHEL6.tar.gz
+		pushd rrent
+		./install.sh
+		popd
+
