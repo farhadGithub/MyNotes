@@ -296,7 +296,7 @@ d. Finally run `jupyter notebook` on your VM to start the notebook server. In or
 		
 Regardless of the environment in which you are, by running `jupyter notebook`, you should be able to create both python 2.7 and 3.5 notebooks.
 
-####17.  Adding the Jupyter server as start-up service:
+####17.  Adding the Jupyter server as a start-up service:
 
 		cd /etc/init.d
 		echo "cd ${HOME};setuid ${USER} nohup ${USER}/anaconda2/bin/ipython notebook > /tmp/t.log 2>&1 < /dev/null &" > start_ipython
