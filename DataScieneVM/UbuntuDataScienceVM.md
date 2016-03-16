@@ -334,7 +334,7 @@ You may also need to run:
 		
 prior to installing the `IRkernel` package and related packages.
 
-And then restart the Kernel.		
+And then start the server (i.e. `jupyter notebook`).		
 
 
 
