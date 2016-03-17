@@ -314,7 +314,7 @@ And then start the server (i.e. `jupyter notebook`).
 ####23.  Adding the Jupyter Server as a Start-up Service:
 
 		cd ~
-		echo "cd ${HOME};setuid ${USER} nohup ${HOME}/anaconda2/bin/ipython notebook > /tmp/t.log 2>&1 < /dev/null &" > start_ipython
+		printf "# chkconfig: 35 99 01\n# description: some startup script\ncd ${HOME};setuid ${USER} nohup ${HOME}/anaconda2/bin/ipython notebook > /tmp/t.log 2>&1 < /dev/null &" > start_ipython
 		sudo mv start_ipython /etc/init.d
 		cd /etc/init.d
 		sudo chmod +x /etc/init.d/start_ipython 
@@ -324,5 +324,14 @@ Finally, we need to reboot to start the service
 
 		sudo reboot
 		
+####24.  Adding the Visual Studio Code:
+
+a. This steps requires a Linux desktop. Download VS Code from [here](https://code.visualstudio.com/#alt-downloads).
+
+b. Unzip the file.
+
+c. Double click on Code to run Visual Studio Code.
+
+	
 
 		
