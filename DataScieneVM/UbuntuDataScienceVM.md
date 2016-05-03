@@ -296,7 +296,13 @@ d. Finally run `jupyter notebook` on your VM to start the notebook server. In or
 		
 Regardless of the environment in which you are, by running `jupyter notebook`, you should be able to create both python 2.7 and 3.5 notebooks.
 
-####17.  Adding the Jupyter server as a start-up service:
+####18. Installing TensorFlow
+		source activate ~/anaconda2
+		pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.8.0-cp27-none-linux_x86_64.whl
+		source activate python27
+		pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.8.0-cp27-none-linux_x86_64.whl
+		
+####19.  Adding the Jupyter server as a start-up service:
 
 		cd ~
 		echo "cd ${HOME};setuid ${USER} nohup ${HOME}/anaconda2/bin/ipython notebook > /tmp/t.log 2>&1 < /dev/null &" > start_ipython
@@ -323,7 +329,7 @@ If you see a complaint about a dependency issue with some packages, run:
 	
 		sudo apt-get install package-name 	
 		
-####19.  Adding R Kernel to Jupyter server:
+####20.  Adding R Kernel to Jupyter server:
 
 		conda update ipython 
 		conda update pyzmq
@@ -342,6 +348,3 @@ If you see a complaint about a dependency issue with some packages, run:
 When installing `devtools` in R, you may also need to exit R and install other Linux packages.
 
 And then start the server (i.e. `jupyter notebook`).		
-
-
-
