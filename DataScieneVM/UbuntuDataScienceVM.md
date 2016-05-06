@@ -319,7 +319,7 @@ And if you want to stop this service, run:
 
 		sudo update-rc.d -f start_ipython remove
 		
-####18.  Installing [Microsoft R Open](https://mran.revolutionanalytics.com/download/):
+####20.  Installing [Microsoft R Open](https://mran.revolutionanalytics.com/download/):
 We assume in these steps that the VM is running on Ubuntu 14:
 
 		wget 'https://mran.revolutionanalytics.com/install/mro/3.2.3/MRO-3.2.3-Ubuntu-14.4.x86_64.deb'
@@ -329,7 +329,7 @@ If you see a complaint about a dependency issue with some packages, run:
 	
 		sudo apt-get install package-name 	
 		
-####20.  Adding R Kernel to Jupyter server:
+####21.  Adding R Kernel to Jupyter server:
 
 		conda update ipython 
 		conda update pyzmq
