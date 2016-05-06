@@ -216,7 +216,7 @@ Blob Storage account and the name of your file.
 
 c.  To interact with Azure Blob Storage from Python, read this [link](http://blogs.msdn.com/b/tconte/archive/2013/04/17/how-to-interact-with-windows-azure-blob-storage-from-linux-using-python.aspx).
     
-####12.  Installing Anaconda for Python 2.7 (Based on instructions outlined [here](http://docs.continuum.io/anaconda/install#linux-install)):
+####12.  Installing Anaconda Python 2.7 (Based on instructions outlined [here](http://docs.continuum.io/anaconda/install#linux-install)):
 
 a.  From the Anaconda website, copy and paste the link address of its Linux installer and then run:
 		
@@ -224,11 +224,11 @@ a.  From the Anaconda website, copy and paste the link address of its Linux inst
 
 Your command after pasting should look like this:
 
-		wget "https://3230d63b5fc54e62148e-c95ac804525aac4b6dba79b00b39d1d3.ssl.cf1.rackcdn.com/Anaconda2-2.5.0-Linux-x86_64.sh"
+		wget "http://repo.continuum.io/archive/Anaconda2-4.0.0-Linux-x86_64.sh"
 
 b.  Run:
       
-		bash Anaconda2-2.5.0-Linux-x86_64.sh
+		bash Anaconda2-4.0.0-Linux-x86_64.sh
 
 The name of the file might be different depending on what version of
 the Anaconoda you download.
