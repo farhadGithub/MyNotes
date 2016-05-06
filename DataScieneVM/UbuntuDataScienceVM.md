@@ -322,8 +322,8 @@ And if you want to stop this service, run:
 ####20.  Installing [Microsoft R Open](https://mran.revolutionanalytics.com/download/):
 We assume in these steps that the VM is running on Ubuntu 14:
 
-		wget 'https://mran.revolutionanalytics.com/install/mro/3.2.3/MRO-3.2.3-Ubuntu-14.4.x86_64.deb'
-		sudo dpkg -i MRO-3.2.3-Ubuntu-14.4.x86_64.deb
+		wget 'https://mran.revolutionanalytics.com/install/mro/3.2.4/MRO-3.2.4-Ubuntu-14.4.x86_64.deb'
+		sudo dpkg -i MRO-3.2.4-Ubuntu-14.4.x86_64.deb
 
 If you see a complaint about a dependency issue with some packages, run:
 	
