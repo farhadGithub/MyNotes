@@ -353,4 +353,8 @@ And then start the server (i.e. `jupyter notebook`).
 
 		sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
 		pip install keras
+
 		
+####23. Installing ScreenL
+
+		sudo apt-get install screen
