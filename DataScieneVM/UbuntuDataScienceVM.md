@@ -347,4 +347,10 @@ If you see a complaint about a dependency issue with some packages, run:
 
 When installing `devtools` in R, you may also need to exit R and install other Linux packages.
 
-And then start the server (i.e. `jupyter notebook`).		
+And then start the server (i.e. `jupyter notebook`).	
+
+####22.  Installing [Keras](http://keras.io/):
+
+		sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
+		pip install keras
+		
