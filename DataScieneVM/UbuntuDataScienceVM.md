@@ -298,10 +298,20 @@ Regardless of the environment in which you are, by running `jupyter notebook`, y
 
 ####18. Installing TensorFlow
 		source activate ~/anaconda2
-		pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.8.0-cp27-none-linux_x86_64.whl
-		source activate python27
-		pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.8.0-cp27-none-linux_x86_64.whl
 		
+				
+For GPU:		
+	
+		pip install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.8.0-cp27-none-linux_x86_64.whl
+
+For CPU Only:
+
+		pip install --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-0.8.0-cp27-none-linux_x86_64.whl
+
+You may need to repeat the above lines under python27 environment too: 
+		
+		source activate python27
+
 ####19.  Adding the Jupyter server as a start-up service:
 
 		cd ~
