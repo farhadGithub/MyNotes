@@ -355,6 +355,18 @@ And then start the server (i.e. `jupyter notebook`).
 		pip install keras
 
 		
-####23. Installing ScreenL
+####23. Installing Screen:
 
 		sudo apt-get install screen
+
+####24. Installing TensorFlow:
+
+		sudo apt-get install python-pip python-dev
+		
+For GPU:		
+	
+		sudo pip install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.8.0-cp27-none-linux_x86_64.whl
+
+For CPU Only:
+
+		pip install --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-0.8.0-cp27-none-linux_x86_64.whl
