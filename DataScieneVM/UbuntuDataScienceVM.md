@@ -381,7 +381,7 @@ For GPU Only:
 
 		pip install --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-0.8.0-cp27-none-linux_x86_64.whl
 
-Add the following lines to the '''.bashrc''' file:
+Add the following lines to the ```.bashrc``` file:
 
 		export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64"
 		export CUDA_HOME=/usr/local/cuda
