@@ -296,23 +296,8 @@ d. Finally run `jupyter notebook` on your VM to start the notebook server. In or
 		
 Regardless of the environment in which you are, by running `jupyter notebook`, you should be able to create both python 2.7 and 3.5 notebooks.
 
-####18. Installing TensorFlow
-		source activate ~/anaconda2
-		
-				
-For GPU:		
-	
-		pip install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-0.8.0-cp27-none-linux_x86_64.whl
 
-For CPU Only:
-
-		pip install --upgrade https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow-0.8.0-cp27-none-linux_x86_64.whl
-
-You may need to repeat the above lines under python27 environment too: 
-		
-		source activate python27
-
-####19.  Adding the Jupyter server as a start-up service:
+####18.  Adding the Jupyter server as a start-up service:
 
 		cd ~
 		echo "cd ${HOME};setuid ${USER} nohup ${HOME}/anaconda2/bin/ipython notebook > /tmp/t.log 2>&1 < /dev/null &" > start_ipython
@@ -329,7 +314,7 @@ And if you want to stop this service, run:
 
 		sudo update-rc.d -f start_ipython remove
 		
-####20.  Installing [Microsoft R Open](https://mran.revolutionanalytics.com/download/):
+####19.  Installing [Microsoft R Open](https://mran.revolutionanalytics.com/download/):
 We assume in these steps that the VM is running on Ubuntu 14:
 
 		wget 'https://mran.revolutionanalytics.com/install/mro/3.2.4/MRO-3.2.4-Ubuntu-14.4.x86_64.deb'
@@ -339,7 +324,7 @@ If you see a complaint about a dependency issue with some packages, run:
 	
 		sudo apt-get install package-name 	
 		
-####21.  Adding R Kernel to Jupyter server:
+####20.  Adding R Kernel to Jupyter server:
 
 		conda update ipython 
 		conda update pyzmq
@@ -359,17 +344,17 @@ When installing `devtools` in R, you may also need to exit R and install other L
 
 And then start the server (i.e. `jupyter notebook`).	
 
-####22.  Installing [Keras](http://keras.io/):
+####21.  Installing [Keras](http://keras.io/):
 
 		sudo apt-get install libprotobuf-dev libleveldb-dev libsnappy-dev libopencv-dev libhdf5-serial-dev protobuf-compiler
 		pip install keras
 
 		
-####23. Installing Screen:
+####22. Installing Screen:
 
 		sudo apt-get install screen
 
-####24. Installing TensorFlow:
+####23. Installing TensorFlow:
 
 		sudo apt-get install python-pip python-dev
 		
