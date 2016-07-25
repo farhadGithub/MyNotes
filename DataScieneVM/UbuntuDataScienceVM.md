@@ -382,13 +382,7 @@ a.
 b.
 
 		git clone https://github.com/BVLC/caffe.git
-		
-
-c.
 		cd caffe
-		
-d.
-	
 		cp Makefile.config.example Makefile.config
 		
 e. Uncomment appropriate lines on Makefile.config
