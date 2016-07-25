@@ -525,6 +525,7 @@ f.
 	source .bashrc
 	
 g.
+
 	python
 	import caffe
 	
