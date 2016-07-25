@@ -519,7 +519,7 @@ f.
 	
 e. Add the following line ~/.bashrc
 
-	export PYTHONPATH=~/caffe/python:$PYTHONPATH
+		export PYTHONPATH=~/caffe/python:$PYTHONPATH
 	
 f. 
 
