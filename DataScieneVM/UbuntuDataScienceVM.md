@@ -385,7 +385,7 @@ b.
 		cd caffe
 		cp Makefile.config.example Makefile.config
 		
-c. Uncomment appropriate lines on Makefile.config
+c. Uncomment appropriate lines on ```Makefile.config```
 
 		## Refer to http://caffe.berkeleyvision.org/installation.html
 		# Contributions simplifying and improving our build system are welcome!
@@ -517,7 +517,7 @@ f.
 		cd ~/caffe/
 		make pycaffe
 	
-e. Add the following line ~/.bashrc
+e. Add the following line to ```.bashrc```
 
 		export PYTHONPATH=~/caffe/python:$PYTHONPATH
 	
