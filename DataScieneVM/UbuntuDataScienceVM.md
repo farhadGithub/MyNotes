@@ -385,7 +385,7 @@ b.
 		cd caffe
 		cp Makefile.config.example Makefile.config
 		
-e. Uncomment appropriate lines on Makefile.config
+c. Uncomment appropriate lines on Makefile.config
 
 	## Refer to http://caffe.berkeleyvision.org/installation.html
 	# Contributions simplifying and improving our build system are welcome!
@@ -499,3 +499,32 @@ e. Uncomment appropriate lines on Makefile.config
 	
 	# enable pretty build (comment to see full commands)
 	Q ?= @
+
+d. 
+	make clean
+	make all
+	make test
+	make runtest
+	
+e.
+
+	cd ~/caffe/python
+	for req in $(cat requirements.txt); do pip install $req; done
+	
+f.
+
+	cd ~/caffe/
+	make pycaffe
+	
+e. Add the following line ~/.bashrc
+
+	export PYTHONPATH=~/caffe/python:$PYTHONPATH
+	
+f. 
+
+	source .bashrc
+	
+g.
+	python
+	import caffe
+	
