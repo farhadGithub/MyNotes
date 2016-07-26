@@ -520,7 +520,8 @@ f.
 e. Add the following line to ```.bashrc```
 
 		export PYTHONPATH=~/caffe/python:$PYTHONPATH
-	
+		export LD_LIBRARY_PATH="/usr/local/cuda/lib64:/home/faghasse/anaconda2/lib:$LD_LIBRARY_PATH"
+
 f. 
 
 		source .bashrc
