@@ -531,3 +531,85 @@ g.
 		python
 		import caffe
 	
+####25. Installing ssh:
+
+a. Install the package:
+
+		sudo apt-get install openssh-server
+		
+b. Start the server:
+
+		sudo restart ssh
+		sudo systemctl restart ssh
+
+c. Test the server:
+
+		ssh -v localhost
+
+
+d. Open port 22 on the firewall if needed:
+
+	sudo ufw status
+	sudo ufw default deny incoming
+	sudo ufw default allow outgoing
+	sudo ufw allow ssh
+	sudo ufw allow 2222/tcp
+	sudo ufw allow www
+	sudo ufw enable
+
+####26. Installing vim:
+
+	sudo install vim
+	
+####27. Installing Nvidia GPU drivers:
+
+a. Install packages:
+
+	sudo apt-get install -y build-essential cmake cmake-qt-gui git pkg-config
+	sudo apt-get install nvidia-361-updates nvidia-361-updates-dev
+	sudo apt-get install nvidia-prime
+	sudo apt-get install nvidia-profiler
+	sudo apt-get install nvidia-settings
+	sudo apt-get install nvidia-visual-profiler
+	sudo apt-get install nvidia-cuda-toolkit
+
+b. Test the device:
+
+	nvidia-smi
+
+####28. Installing opencv:
+
+a. Get the packages:
+
+	git clone https://github.com/ltseez/opencv.git
+	git clone https://github.com/Itseez/opencv.git
+	git clone https://github.com/Itseez/opencv_contrib.git
+
+b. Set the flags in CMake GUI:
+
+ 	- CMAKE_BUILD_TYPE => Release
+  	- OPENCV_EXTRA_MODULES_PATH => path_to_the_opencv_contribution_modules
+  	- CMAKE_INSTALL_PREF => /usr/local
+  	 
+c.  	
+	make
+	sudo make install
+
+####28. Installing cudnn:
+
+a. Download the library from this address:
+
+	http://developer.download.nvidia.com/compute/redist/cudnn/v5/cudnn-7.5-linux-x64-v5.0-ga.tgz
+	
+b.
+
+	tar xvf cudnn-7.5-linux-x64-v5.0-ga.tgz
+	sudo cp -av cuda/lib64/* /usr/lib/x86_64-linux-gnu/
+	sudo cp -av cuda/include/* /usr/include/
+
+
+
+
+
+
+	
