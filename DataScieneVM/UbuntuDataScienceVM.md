@@ -419,10 +419,10 @@ c. Uncomment appropriate lines on ```Makefile.config```
 		# CUSTOM_CXX := g++
 		
 		# CUDA directory contains bin/ and lib/ directories that we need.
-		CUDA_DIR := /usr/local/cuda
+		#CUDA_DIR := /usr/local/cuda
 		# On Ubuntu 14.04, if cuda tools are installed via
 		# "sudo apt-get install nvidia-cuda-toolkit" then use this instead:
-		# CUDA_DIR := /usr
+		CUDA_DIR := /usr
 		
 		# CUDA architecture setting: going with all of them.
 		# For CUDA < 6.0, comment the *_50 lines for compatibility.
@@ -512,30 +512,41 @@ d.
 		make test
 		make runtest
 	
-e.
+e. If encountered a ``` __mempcpy_inline(void*, const void*, size_t)’``` error, edit ```Makefile``` and replace:
+
+		NVCCFLAGS += -ccbin=$(CXX) -Xcompiler -fPIC $(COMMON_FLAGS)
+with
+
+		NVCCFLAGS += -D_FORCE_INLINES -ccbin=$(CXX) -Xcompiler -fPIC $(COMMON_FLAGS)
+
+f.
 
 		cd ~/caffe/python
 		for req in $(cat requirements.txt); do pip install $req; done
 	
-f.
+g.
 
 		cd ~/caffe/
 		make pycaffe
 	
-e. Add the following line to ```.bashrc```
+h. Add the following line to ```.bashrc```
 
 		export PYTHONPATH=~/caffe/python:$PYTHONPATH
 		export LD_LIBRARY_PATH="/usr/local/cuda/lib64:/home/faghasse/anaconda2/lib:$LD_LIBRARY_PATH"
 
-f. 
+i. 
 
 		source .bashrc
 	
-g.
+j.
 
 		python
 		import caffe
 	
+k. Call ```Caffe``` command line from this directory:
+
+		~/caffe/build/tools/caffe
+
 ####25. Installing ssh:
 
 a. Install the package:
