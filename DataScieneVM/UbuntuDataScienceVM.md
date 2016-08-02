@@ -604,24 +604,24 @@ a. Get the packages:
 b. Set the flags in CMake GUI:
 
  	- CMAKE_BUILD_TYPE => Release
-  	- OPENCV_EXTRA_MODULES_PATH => path_to_the_opencv_contribution_modules
+  	- OPENCV_EXTRA_MODULES_PATH => /home/faghasse/opencv_contrib/modules
   	- CMAKE_INSTALL_PREF => /usr/local
   	
-	- PYTHON2_EXECUTABLE:FILEPATH=~/anaconda2/bin/python
-	- PYTHON2_INCLUDE_DIR:PATH=~/anaconda2/include/python2.7
-	- PYTHON2_INCLUDE_DIR2:PATH=
-	- PYTHON2_LIBRARY:FILEPATH=~/anaconda2/lib/libpython2.7.so
-	- PYTHON2_LIBRARY_DEBUG:FILEPATH=
-	- PYTHON2_NUMPY_INCLUDE_DIRS:PATH=~/anaconda2/lib/python2.7/site-packages/numpy/core/include
-	- PYTHON2_PACKAGES_PATH:PATH=~/anaconda2/lib/python2.7/site-packages
+	- PYTHON2_EXECUTABLE => ~/anaconda2/bin/python
+	- PYTHON2_INCLUDE_DIR => ~/anaconda2/include/python2.7
+	- PYTHON2_INCLUDE_DIR2  =>
+	- PYTHON2_LIBRARY  => ~/anaconda2/lib/libpython2.7.so
+	- PYTHON2_LIBRARY_DEBUG  =>
+	- PYTHON2_NUMPY_INCLUDE_DIRS  => ~/anaconda2/lib/python2.7/site-packages/numpy/core/include
+	- PYTHON2_PACKAGES_PATH  => ~/anaconda2/lib/python2.7/site-packages
 
-	- PYTHON3_EXECUTABLE:FILEPATH=~/anaconda2/envs/python34/bin/python
-	- PYTHON3_INCLUDE_DIR:PATH=~/anaconda2/envs/python34/include/python3.4m
-	- PYTHON3_INCLUDE_DIR2:PATH=
-	- PYTHON3_LIBRARY:FILEPATH=~/anaconda2/envs/python34/lib/libpython3.4m.so
-	- PYTHON3_LIBRARY_DEBUG:FILEPATH=
-	- PYTHON3_NUMPY_INCLUDE_DIRS:PATH=~/anaconda2/envs/python34/lib/python3.4/site-packages/numpy/core/include
-	- PYTHON3_PACKAGES_PATH:PATH=~/anaconda2/envs/python34/lib/python3.4/site-packages
+	- PYTHON3_EXECUTABLE  => ~/anaconda2/envs/python34/bin/python
+	- PYTHON3_INCLUDE_DIR  => ~/anaconda2/envs/python34/include/python3.4m
+	- PYTHON3_INCLUDE_DIR2  =>
+	- PYTHON3_LIBRARY  => ~/anaconda2/envs/python34/lib/libpython3.4m.so
+	- PYTHON3_LIBRARY_DEBUG  =>
+	- PYTHON3_NUMPY_INCLUDE_DIRS  => ~/anaconda2/envs/python34/lib/python3.4/site-packages/numpy/core/include
+	- PYTHON3_PACKAGES_PATH  => ~/anaconda2/envs/python34/lib/python3.4/site-packages
 
 c. If you encouter an hdf5 error when compling python, you need to modify the file ```/opencv_contrib-3.1.0/modules/hdf/include/opencv2/hdf/hdf5.hpp`` in line 40:
 
