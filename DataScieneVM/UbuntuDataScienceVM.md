@@ -629,7 +629,7 @@ c. If you encouter an hdf5 error when compling python, you need to modify the fi
 	+++ #include "/usr/include/hdf5/serial/hdf5.h"
 
 d.  	
-	make
+
 	sudo make install
 	sudo ldconfig
 
