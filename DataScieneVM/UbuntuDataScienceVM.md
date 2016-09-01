@@ -597,7 +597,6 @@ b. Test the device:
 
 a. Get the packages:
 
-	git clone https://github.com/ltseez/opencv.git
 	git clone https://github.com/Itseez/opencv.git
 	git clone https://github.com/Itseez/opencv_contrib.git
 
