@@ -360,13 +360,8 @@ If you install from scartch, the following commands most likely will work:
 
 a. Install packages:
 
-	sudo apt-get install -y build-essential cmake cmake-qt-gui git pkg-config
-	sudo apt-get install nvidia-361-updates nvidia-361-updates-dev
-	sudo apt-get install nvidia-prime
-	sudo apt-get install nvidia-profiler
-	sudo apt-get install nvidia-settings
-	sudo apt-get install nvidia-visual-profiler
-	sudo apt-get install nvidia-cuda-toolkit
+	sudo apt-get install -y build-essential cmake cmake-qt-gui git pkg-config nvidia-361-updates nvidia-361-updates-dev
+	sudo apt-get install nvidia-prime nvidia-profiler nvidia-settings nvidia-visual-profiler nvidia-cuda-toolkit
 
 However, if you are upgrading, follwow these lines:
 
