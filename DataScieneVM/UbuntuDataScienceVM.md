@@ -677,11 +677,11 @@ d.
 
 a. Download the library from this address:
 
-	http://developer.download.nvidia.com/compute/redist/cudnn/v5/cudnn-7.5-linux-x64-v5.0-ga.tgz
+	https://developer.nvidia.com/cudnn
 	
 b.
 
-	tar xvf cudnn-7.5-linux-x64-v5.0-ga.tgz
+	tar xvf cudnn-8.0-linux-x64-v5.1.tgz
 	sudo cp -av cuda/lib64/* /usr/lib/x86_64-linux-gnu/
 	sudo cp -av cuda/include/* /usr/include/
 
