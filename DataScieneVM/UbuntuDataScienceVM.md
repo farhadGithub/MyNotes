@@ -356,6 +356,14 @@ And then start the server (i.e. `jupyter notebook`).
 
 ####23. Installing CUDA Toolkit (Based on instructions outlined [here](http://askubuntu.com/questions/799184/how-can-i-install-cuda-on-ubuntu-16-04)):
 
+a. [Download](https://developer.nvidia.com/cuda-downloads) CUDA runfile (local) for Ubuntu 16.04.
+b. Check the md5 sum: '''md5sum cuda_7.5.18_linux.run'''. Only continue if it is correct.
+c. Remove any other installation:'''sudo apt-get purge nvidia-cuda*'''. If you want to install the drivers too, then '''sudo apt-get purge nvidia-*'''.
+If you want to install the display drivers(*), logout from your GUI. Go to a terminal session (ctrl+alt+F2)
+Stop lightdm: sudo service lightdm stop
+sudo sh cuda_7.5.18_linux.run --override. Make sure that you say y for the symbolic link.
+Start lightdm again: sudo service lightdm start
+Follow the command-line prompts
 ####23. Installing TensorFlow:
 
 		sudo apt-get install python-pip python-dev
