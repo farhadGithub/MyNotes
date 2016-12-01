@@ -413,7 +413,19 @@ It is important to note that CUDA toolkit version 8 by default is installed at P
 
 So this should be taken into account when installing other tooks that use this toolkit.
 
-####23. Installing TensorFlow:
+####24. Installing cudnn:
+
+a. Download the library from this address:
+
+	https://developer.nvidia.com/cudnn
+	
+b.
+
+	tar xvf cudnn-8.0-linux-x64-v5.1.tgz
+	sudo cp -av cuda/lib64/* /usr/lib/x86_64-linux-gnu/
+	sudo cp -av cuda/include/* /usr/include/
+
+####25. Installing TensorFlow:
 
 		sudo apt-get install python-pip python-dev
 		
@@ -430,7 +442,7 @@ Add the following lines to the ```.bashrc``` file:
 		export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda/lib64"
 		export CUDA_HOME=/usr/local/cuda
 
-####24. Installing Caffe:
+####26. Installing Caffe:
 
 a. 		
 
@@ -606,7 +618,7 @@ k. Call ```Caffe``` command line from this directory:
 
 		~/caffe/build/tools/caffe
 
-####25. Installing ssh:
+####27. Installing ssh:
 
 a. Install the package:
 
@@ -632,11 +644,11 @@ d. Open port 22 on the firewall if needed:
 	sudo ufw allow www
 	sudo ufw enable
 
-####26. Installing vim:
+####28. Installing vim:
 
 	sudo install vim
 	
-####28. Installing opencv:
+####29. Installing opencv:
 
 a. Get the packages:
 
@@ -674,22 +686,3 @@ d.
 
 	sudo make install
 	sudo ldconfig
-
-####28. Installing cudnn:
-
-a. Download the library from this address:
-
-	https://developer.nvidia.com/cudnn
-	
-b.
-
-	tar xvf cudnn-8.0-linux-x64-v5.1.tgz
-	sudo cp -av cuda/lib64/* /usr/lib/x86_64-linux-gnu/
-	sudo cp -av cuda/include/* /usr/include/
-
-
-
-
-
-
-	
