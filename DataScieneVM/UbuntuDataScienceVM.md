@@ -374,7 +374,7 @@ a. [Download](https://developer.nvidia.com/cuda-downloads) CUDA runfile (local).
 
 b. Check the md5 sum: 
 
-	md5sum cuda_7.5.18_linux.run. 
+	md5sum cuda_7.5.18_linux.run 
 	
 Only continue if it is correct.
 
@@ -388,10 +388,12 @@ If you want to install the drivers too, then
 	
 d. If you want to install the display drivers(*), logout from your GUI. Go to a terminal session (ctrl+alt+F2)
 
-	Stop lightdm: sudo service lightdm stop
+	sudo service lightdm stop
+ls
 
 e. 
-	sudo sh cuda_7.5.18_linux.run --override. 
+
+	sudo sh cuda_7.5.18_linux.run --override 
 	
 Make sure that you say y for the symbolic link.
 
