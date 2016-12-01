@@ -389,7 +389,6 @@ If you want to install the drivers too, then
 d. If you want to install the display drivers(*), logout from your GUI. Go to a terminal session (ctrl+alt+F2)
 
 	sudo service lightdm stop
-ls
 
 e. 
 
