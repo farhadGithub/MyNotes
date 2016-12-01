@@ -356,14 +356,61 @@ And then start the server (i.e. `jupyter notebook`).
 
 ####23. Installing CUDA Toolkit (Based on instructions outlined [here](http://askubuntu.com/questions/799184/how-can-i-install-cuda-on-ubuntu-16-04)):
 
-a. [Download](https://developer.nvidia.com/cuda-downloads) CUDA runfile (local) for Ubuntu 16.04.
-b. Check the md5 sum: '''md5sum cuda_7.5.18_linux.run'''. Only continue if it is correct.
-c. Remove any other installation:'''sudo apt-get purge nvidia-cuda*'''. If you want to install the drivers too, then '''sudo apt-get purge nvidia-*'''.
-If you want to install the display drivers(*), logout from your GUI. Go to a terminal session (ctrl+alt+F2)
-Stop lightdm: sudo service lightdm stop
-sudo sh cuda_7.5.18_linux.run --override. Make sure that you say y for the symbolic link.
-Start lightdm again: sudo service lightdm start
-Follow the command-line prompts
+If you install from scartch, the following commands most likely will work:
+
+a. Install packages:
+
+	sudo apt-get install -y build-essential cmake cmake-qt-gui git pkg-config
+	sudo apt-get install nvidia-361-updates nvidia-361-updates-dev
+	sudo apt-get install nvidia-prime
+	sudo apt-get install nvidia-profiler
+	sudo apt-get install nvidia-settings
+	sudo apt-get install nvidia-visual-profiler
+	sudo apt-get install nvidia-cuda-toolkit
+
+However, if you are upgrading, follwow these lines:
+
+a. [Download](https://developer.nvidia.com/cuda-downloads) CUDA runfile (local).
+
+b. Check the md5 sum: 
+
+	md5sum cuda_7.5.18_linux.run. 
+	
+Only continue if it is correct.
+
+c. Remove any other installation:
+
+	sudo apt-get purge nvidia-cuda* 
+	
+If you want to install the drivers too, then 
+	
+	sudo apt-get purge nvidia-*
+	
+d. If you want to install the display drivers(*), logout from your GUI. Go to a terminal session (ctrl+alt+F2)
+
+	Stop lightdm: sudo service lightdm stop
+
+e. 
+	sudo sh cuda_7.5.18_linux.run --override. 
+	
+Make sure that you say y for the symbolic link.
+
+f. Start lightdm again: 
+	
+	sudo service lightdm start
+
+Test the device and the toolkit version:
+
+	nvidia-smi
+	
+	nvcc --version
+
+It is important to note that CUDA toolkit version 8 by default is installed at Please make sure that
+
+	/usr/local/cuda-8.0/bin
+
+So this should be taken into account when installing other tooks that use this toolkit.
+
 ####23. Installing TensorFlow:
 
 		sudo apt-get install python-pip python-dev
@@ -587,22 +634,6 @@ d. Open port 22 on the firewall if needed:
 
 	sudo install vim
 	
-####27. Installing Nvidia GPU drivers:
-
-a. Install packages:
-
-	sudo apt-get install -y build-essential cmake cmake-qt-gui git pkg-config
-	sudo apt-get install nvidia-361-updates nvidia-361-updates-dev
-	sudo apt-get install nvidia-prime
-	sudo apt-get install nvidia-profiler
-	sudo apt-get install nvidia-settings
-	sudo apt-get install nvidia-visual-profiler
-	sudo apt-get install nvidia-cuda-toolkit
-
-b. Test the device:
-
-	nvidia-smi
-
 ####28. Installing opencv:
 
 a. Get the packages:
