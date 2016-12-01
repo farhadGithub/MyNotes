@@ -354,6 +354,8 @@ And then start the server (i.e. `jupyter notebook`).
 
 		sudo apt-get install screen
 
+####23. Installing CUDA Toolkit (Based on instructions outlined [here](http://askubuntu.com/questions/799184/how-can-i-install-cuda-on-ubuntu-16-04)):
+
 ####23. Installing TensorFlow:
 
 		sudo apt-get install python-pip python-dev
