@@ -401,10 +401,6 @@ Test the device and the toolkit version:
 	
 	nvcc --version
 
-It is important to note that CUDA toolkit version 8 by default is installed at Please make sure that
-
-	/usr/local/cuda-8.0/bin
-
 So this should be taken into account when installing other tooks that use this toolkit.
 
 ####24. Installing cudnn:
