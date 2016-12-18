@@ -7,7 +7,7 @@ Install x11vnc:
 ```
     sudo apt-get install x11vnc
 ```    
-Create a password for your connection (This might be redundant step as previously done by envoking vino-preferences:    
+Create a password for your connection:    
 ```
     x11vnc -storepasswd  
 ``` 
