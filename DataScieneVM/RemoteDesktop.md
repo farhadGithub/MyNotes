@@ -1,6 +1,5 @@
 # Remote Desktop from Windows to Ubuntu Using VNC and X11VNC
-
-*. Although Ubuntu comes with a desktop sharing tool, I was not able to get to work. Instead, here I describe two approaches 
+Although Ubuntu comes with a desktop sharing tool, I was not able to get to work. Instead, here I describe two approaches 
 to set up a light-weight desktop and a full desktop. We use tightvncserver for light connection and x11vnc for full connection.
 
 ## Common steps for both light-weight and full desktops on the server:
@@ -23,7 +22,6 @@ Then run:
 ```
     
 2. You can always check if your (x11) vnc server is running and at which port by running the following command:
-
 ```
     netstat -plant
 ````
