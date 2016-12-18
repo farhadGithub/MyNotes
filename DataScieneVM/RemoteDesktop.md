@@ -10,16 +10,17 @@ On Ubuntu desktop dash, type "Desktop Sharing" and open "Desktop Sharing Prefere
 1. Run the following commands:
   
 Install x11vnc:
-
+```
     sudo apt-get install x11vnc
-    
+```    
 Create a password for your connection (This might be redundant step as previously done by envoking vino-preferences:    
-
+```
     x11vnc -storepasswd  
-    
+``` 
 Then run:
-
+```
     sudo x11vnc -xkb -noxrecord -noxfixes -noxdamage -display :0 -auth /var/run/lightdm/root/:0 -usepw
+```
     
 2. You can always check if your (x11) vnc server is running and at which port by running the following command:
 
