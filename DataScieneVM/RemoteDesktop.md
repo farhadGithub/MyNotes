@@ -1,6 +1,4 @@
 # Remote Desktop from Windows to Ubuntu Using X11VNC
-Although Ubuntu comes with a desktop sharing tool, I was not able to get to work. Instead, here I describe how to 
-set up a full desktop. We use tightvncserver for light connection and x11vnc for full connection.
 
 ## Steps for full desktop on the server (Ubuntu machine):
 On the Ubuntu desktop dash, type "Desktop Sharing" and open "Desktop Sharing Preferences" (From command line, this is equivalent of calling vino-preferences). Check "Allow other users to view your desktop", "Allow other user to control your desktop", "Requier the user to enter this password." Enter a password. Also select "Only when someone is connected." All these options can also be set from the command line. Press "Close."
