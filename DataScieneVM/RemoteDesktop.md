@@ -23,8 +23,10 @@ Then run:
     
 2. You can always check if your (x11) vnc server is running and at which port by running the following command:
 
-        netstat -plant
-    
+```
+    netstat -plant
+````
+
 and look for vnc in the list.    
     
     
