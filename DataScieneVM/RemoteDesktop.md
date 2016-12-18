@@ -42,5 +42,5 @@ You can also check if your (x11) vnc server is running and at which port by runn
 ```
 and look for words vnc or vino in the list.    
 ## Steps for full desktop on the client (Windows machine):
-Download Tight VNC Java Viewer from [here](http://www.tightvnc.com/download.php"). This viewer comes with SSH tunneling.Unzip the file and run `tightvnc-jviewer`. Enter the IP address or the hostname of the machine you want to connect to in the Remote Host box. Enter the port number you noted from the previous step. You can check "Use SSH tunneling" if you want SSH tunneling and have already set up a SSH server. 
+Download Tight VNC Java Viewer from [here](http://www.tightvnc.com/download.php"). This viewer comes with SSH tunneling. Unzip the file and run `tightvnc-jviewer`. Enter the IP address or the hostname of the machine you want to connect to in the "Remote Host" box. Enter the port number you noted from the previous step. You can check "Use SSH tunneling" if you want SSH tunneling and have already set up a SSH server. 
 
