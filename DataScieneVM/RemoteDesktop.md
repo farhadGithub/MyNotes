@@ -30,6 +30,7 @@ and look for vnc in the list.
     
 3. After making a backup, replace your ~/.vnc/xstartup file with this:
 
+```    
     #!/bin/sh
 
     export XKL_XMODMAP_DISABLE=1
@@ -47,7 +48,7 @@ and look for vnc in the list.
     nautilus &
     gnome-terminal &
     gnome-session &
-
+```
 
 
 
